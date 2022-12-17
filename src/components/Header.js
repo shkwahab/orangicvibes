@@ -154,7 +154,7 @@ const Navbar = (props) => {
             <section id="hero">
                 <section id="slider1">
                 <div className=" container-fluid mt-[1px] ">
-                     <div className="row bg-[#faf5f5] bg-opacity-50  h-[60vh] ">
+                     <div className="row bg-[#faf5f5] bg-opacity-50   ">
                         <div className="col-7  py-20">
                             <div className="col ml-10">
                                 <h4>
