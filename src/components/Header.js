@@ -51,21 +51,21 @@ const Navbar = (props) => {
             <section id="navbar" className='  sticky top-0 z-10'>
                 <div className=" container">
                     <div className="row  bg-white  align-self-center items-center">
-                        <div className="col-lg-3  py-2 relative ">
+                        <div className="col-lg-3  py-4 relative ">
                             <h3 className='font-medium'>
                                 {props.sitetitle}
                             </h3>
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
-                                <li className=" py-2 nav-item mx-2">{props.category1}</li>
-                                <div onMouseEnter={ShopSlider} className=" py-2 cursor-pointer  mx-2">
+                                <li className=" py-4 nav-item mx-2">{props.category1}</li>
+                                <div onMouseEnter={ShopSlider} className=" py-4 cursor-pointer  mx-2">
                                     <div className="flex items-center cursor-pointer">
                                         <li className=" ">{props.category2}</li>
                                         <IoIosArrowDown />
                                     </div>
                                 </div>
-                                <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-12  ${isShopSlider ? "" : "hidden"} absolute py-2  left-[12rem]  justify-center  `}>
+                                <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-16  ${isShopSlider ? "" : "hidden"} absolute py-4  left-[12rem]  justify-center  `}>
                                     <div className=" border-t-2 border-[#95AE3C]">
                                     <div className="   container-fluid  rounded-b-md bg-gray-300 px-4 py-8">
                                         <div className="row  w-[800px]">
@@ -132,13 +132,13 @@ const Navbar = (props) => {
                                     </div>
                                     </div>
                                 </div>
-                                <li className=" py-2 nav-item mx-2">{props.category3}</li>
-                                <li className=" py-2 nav-item mx-2">{props.category4}</li>
-                                <li className=" py-2 nav-item mx-2">{props.category5}</li>
-                                <li className=" py-2 nav-item mx-2">{props.category6}</li>
+                                <li className=" py-4 nav-item mx-2">{props.category3}</li>
+                                <li className=" py-4 nav-item mx-2">{props.category4}</li>
+                                <li className=" py-4 nav-item mx-2">{props.category5}</li>
+                                <li className=" py-4 nav-item mx-2">{props.category6}</li>
                             </ul>
                         </div>
-                        <div className="col-lg-3 py-2  flex justify-end ">
+                        <div className="col-lg-3 py-4  flex justify-end ">
                             <div className="flex ">
                                 <div className=" mx-2">
                                     <div className=" rounded-full p-2  bg-[#F5F2FF]">
@@ -172,7 +172,7 @@ const Navbar = (props) => {
                 <section id="slider1" className={`${hero1?"":"hidden"}`}>
                 <div className=" container-fluid mt-[1px] ">
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
-                        <div className="col-7  py-20">
+                        <div className="col-7  py-28">
                             <div className="col ml-10">
                                 <h4>
                                     Top Seller in the Week
@@ -189,7 +189,7 @@ const Navbar = (props) => {
                             </div>
                         </div>
                         <div className="col-5" >
-                            <div className=" flex justify-end mt-20 w-11/12">
+                            <div className=" flex justify-end mt-40 w-11/12">
                             <img src="/hero1.png" alt="" />
                             </div>
                         </div>
@@ -199,7 +199,7 @@ const Navbar = (props) => {
                 <section id="slider2" className={`${hero2?"hidden":""}`}>
                 <div className=" container-fluid mt-[1px] ">
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
-                        <div className="col-7  py-20">
+                        <div className="col-7  py-28">
                             <div className="col ml-10">
                                 <h4>
                                     Top Seller in the Week
@@ -216,7 +216,7 @@ const Navbar = (props) => {
                             </div>
                         </div>
                         <div className="col-5" >
-                            <div className=" flex justify-end mt-20 w-11/12">
+                            <div className=" flex justify-end mt-40 w-11/12">
                             <img src="/hero2.png" alt="" />
                             </div>
                         </div>
@@ -226,7 +226,7 @@ const Navbar = (props) => {
                 <section id="slider3" className={`${hero3?"hidden":""}`}>
                 <div className=" container-fluid mt-[1px] ">
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
-                        <div className="col-7  py-20">
+                        <div className="col-7  py-28">
                             <div className="col ml-10">
                                 <h4>
                                     Top Seller in the Week
@@ -243,7 +243,7 @@ const Navbar = (props) => {
                             </div>
                         </div>
                         <div className="col-5" >
-                            <div className=" flex justify-end mt-20 w-11/12">
+                            <div className=" flex justify-end mt-40 w-11/12">
                             <img src="/hero3.png" alt="" />
                             </div>
                         </div>
