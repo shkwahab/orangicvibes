@@ -36,7 +36,7 @@ const Navbar = (props) => {
                 <div className=" container    ">
                     <div className="row  bg-white  align-self-center items-center">
                         <div className="col-lg-3  py-2 relative ">
-                            <h1 className='text-2xl font-medium'>
+                            <h1 className='text-[#95AE3C] text-2xl font-medium'>
                                 {props.sitetitle}
                             </h1>
                         </div>
@@ -50,7 +50,7 @@ const Navbar = (props) => {
                                     </div>
                                 </div>
                                 <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-12  ${isShopSlider ? "" : "hidden"} absolute py-2  left-[12rem]  justify-center  `}>
-                                    <div className=" border-t-2 border-green-300">
+                                    <div className=" border-t-2 border-[#95AE3C]">
                                     <div className="  container-fluid  rounded-b-md bg-gray-300 p-3">
                                         <div className="row  w-[800px]">
                                             <div className="col-3">
@@ -123,11 +123,28 @@ const Navbar = (props) => {
                             </ul>
                         </div>
                         <div className="col-lg-3 py-2  flex justify-end ">
-                            <div className="row">
-                                <div className="col-3 bg-green-400">Icons</div>
-                                <div className="col-3 bg-green-500">Icons</div>
-                                <div className="col-3 bg-green-700">Icons</div>
-                                <div className="col-3 bg-green-800">Icons</div>
+                            <div className="flex ">
+                                <div className=" mx-2">
+                                    <div className=" rounded-full p-2  bg-[#F5F2FF]">
+                                        <BiSearch className=' text-xl text-gray-500'/>
+                                    </div>
+                                </div>
+                                <div className=" mx-2">
+                                    <div className=" rounded-full p-2  bg-[#FFF3EC]">
+                                        <BiUser className=' text-xl text-gray-500'/>
+                                    </div>
+                                </div>
+                                <div className= " mx-2">
+                                    <div className=" rounded-full p-2  bg-[#ECFBFF]">
+                                        <FiHeart className=' text-xl text-gray-500'/>
+                                    </div>
+                                </div>
+                                <div className=" mx-2">
+                                    <div className=" rounded-full p-2  bg-[#FEEFD0]">
+                                        <HiOutlineShoppingBag className=' text-xl text-gray-500'/>
+                                    </div>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
