@@ -85,7 +85,7 @@ const Navbar = (props) => {
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 translate  hover:animate-slideleft cursor-pointer">
+                                                            <li className="  hover:animate-slideleft hover:translate-x-5 translate cursor-pointer">
                                                             {props.Shop1ListItem6}
                                                             </li>
                                                             </div>
@@ -97,9 +97,21 @@ const Navbar = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-3">ShopCategory2</div>
-                                            <div className="col-3">ShopCategory3</div>
-                                            <div className="col-3">ShopCategory4</div>
+                                            <div className="col-3">
+                                                <h5 className=' font-semibold'>
+                                                {props.ShopHeading2}
+                                                </h5>
+                                                </div>
+                                            <div className="col-3">
+                                                <h5 className=' font-semibold'>
+                                                {props.ShopHeading3}
+                                                </h5>
+                                                </div>
+                                            <div className="col-3">
+                                                <h5 className=' font-semibold'>
+                                                {props.ShopHeading4}
+                                                </h5>
+                                                </div>
                                         </div>
                                     </div>
                                     </div>
