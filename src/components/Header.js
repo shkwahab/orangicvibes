@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io"
 import { BiSearch, BiUser } from "react-icons/bi"
 import { FiHeart } from "react-icons/fi"
@@ -21,14 +21,30 @@ const Navbar = (props) => {
             SetShopSlider(!isShopSlider);
         }
     }
-    const [BlogPages, SetBlogPages] = useState(false);
-    const BlogPageSlider = () => {
-        if (ShopSlider === true)
-            SetShopSlider(!isShopSlider);
-        SetBlogPages(!BlogPages);
+   const[hero1,SetHero1]=useState(true);
+   const[hero2,SetHero2]=useState(true);
+   const[hero3,SetHero3]=useState(true);
+
+   setTimeout(()=>{
+
+       if(hero1===true){
+           SetHero1(false);
+           SetHero2(false);
+           SetHero3(true);
+       }
+    
+   else if(hero2===false){
+        SetHero1(false);
+        SetHero2(true);
+        SetHero3(false);
     }
-
-
+    else if(hero3===false){
+        SetHero2(true);
+        SetHero1(true);
+        SetHero3(true);
+    }
+  
+   },2000)
     return (
         <>
   
@@ -151,8 +167,9 @@ const Navbar = (props) => {
                 </div>
                     <div className=" bg-black h-[1px] bg-opacity-10 "></div>
             </section>
+
             <section id="hero">
-                <section id="slider1">
+                <section id="slider1" className={`${hero1?"":"hidden"}`}>
                 <div className=" container-fluid mt-[1px] ">
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
                         <div className="col-7  py-20">
@@ -179,6 +196,61 @@ const Navbar = (props) => {
                      </div>
                 </div>
                 </section>
+                <section id="slider2" className={`${hero2?"hidden":""}`}>
+                <div className=" container-fluid mt-[1px] ">
+                     <div className="row bg-[#faf5f5] bg-opacity-50   ">
+                        <div className="col-7  py-20">
+                            <div className="col ml-10">
+                                <h4>
+                                    Top Seller in the Week
+                                </h4>
+                                <h1 className=' w-8/12 font-medium my-8 lg:text-7xl'>
+                                   The Best Health Fresh
+                                </h1>
+                                <p className="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
+                                </p>
+                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                    Shop Now
+                                </button>
+                            </div>
+                        </div>
+                        <div className="col-5" >
+                            <div className=" flex justify-end mt-20 w-11/12">
+                            <img src="/hero2.png" alt="" />
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                </section>
+                <section id="slider3" className={`${hero3?"hidden":""}`}>
+                <div className=" container-fluid mt-[1px] ">
+                     <div className="row bg-[#faf5f5] bg-opacity-50   ">
+                        <div className="col-7  py-20">
+                            <div className="col ml-10">
+                                <h4>
+                                    Top Seller in the Week
+                                </h4>
+                                <h1 className=' w-10/12 font-medium my-8 lg:text-7xl'>
+                                   Fresh Bread Oatmeal Crumble
+                                </h1>
+                                <p className="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
+                                </p>
+                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                    Shop Now
+                                </button>
+                            </div>
+                        </div>
+                        <div className="col-5" >
+                            <div className=" flex justify-end mt-20 w-11/12">
+                            <img src="/hero3.png" alt="" />
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                </section>
+
             </section>
         </>
     )
