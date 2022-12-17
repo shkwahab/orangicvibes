@@ -250,7 +250,6 @@ const Navbar = (props) => {
                      </div>
                 </div>
                 </section>
-
             </section>
         </>
     )
