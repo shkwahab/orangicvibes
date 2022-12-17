@@ -24,7 +24,7 @@ h5{
     @apply lg:text-lg md:text-base text-sm;
 }
 .shopitems li:nth-child(n){
-@apply my-1 hover:text-[#95AE3C];
+@apply my-1 hover:text-[#95AE3C] hover:font-normal;
 }
 
 

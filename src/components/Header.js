@@ -33,7 +33,7 @@ const Navbar = (props) => {
         <>
   
             <section id="navbar ">
-                <div className=" container    ">
+                <div className=" container">
                     <div className="row  bg-white  align-self-center items-center">
                         <div className="col-lg-3  py-2 relative ">
                             <h1 className='text-[#95AE3C] text-2xl font-medium'>
@@ -51,11 +51,11 @@ const Navbar = (props) => {
                                 </div>
                                 <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-12  ${isShopSlider ? "" : "hidden"} absolute py-2  left-[12rem]  justify-center  `}>
                                     <div className=" border-t-2 border-[#95AE3C]">
-                                    <div className="  container-fluid  rounded-b-md bg-gray-300 p-3">
+                                    <div className="   container-fluid  rounded-b-md bg-gray-300 px-4 py-8">
                                         <div className="row  w-[800px]">
                                             <div className="col-3">
                                                 <div className="">
-                                                    <h5>
+                                                    <h5 className=' text-[#95AE3C]'>
                                                         {props.ShopHeading1}
                                                     </h5>
                                                     <div  className="row shopitems flex-col">
@@ -98,17 +98,17 @@ const Navbar = (props) => {
                                                 </div>
                                             </div>
                                             <div className="col-3">
-                                                <h5 className=' font-semibold'>
+                                                <h5 className='text-[#95AE3C] font-semibold'>
                                                 {props.ShopHeading2}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className=' font-semibold'>
+                                                <h5 className='text-[#95AE3C] font-semibold'>
                                                 {props.ShopHeading3}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className=' font-semibold'>
+                                                <h5 className='text-[#95AE3C] font-semibold'>
                                                 {props.ShopHeading4}
                                                 </h5>
                                                 </div>
