@@ -2,3 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+div#shopslider:hover  div#shopy{
+    @apply block;
+}
+div#shopy:hover{
+    @apply block;
+}
+h1{
+    @apply lg:text-4xl md:text-3xl text-2xl;
+}
+h2{
+    @apply lg:text-3xl md:text-2xl text-xl;
+}
+h3{
+    @apply lg:text-2xl md:text-xl text-lg;
+}
+h4{
+    @apply lg:text-xl md:text-lg text-base;
+}
+h5{
+    @apply lg:text-lg md:text-base text-sm;
+}
+.shopitems li:nth-child(n){
+@apply my-1
+}
+
+

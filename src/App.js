@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-      <Navbar 
+      <Header 
       sitetitle="Organic Vibes"
       category1="Home"
       category2="Shop"

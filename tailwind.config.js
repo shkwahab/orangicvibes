@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       keyframes:{
         slideleft:{
-          "0%":{left:"0px" },
-          "100%":{left:"20px"}
+          "0%":{translate:"0px" },
+          "50%":{translate:"30px" },
+         "100%":{translate:"0px"}
         }
       },
       animation:{
-        "slideleft":"slideleft 0.4s ease-in "
+        "slideleft":"slideleft 1s  ease-in-out  "
       }
     },
    
