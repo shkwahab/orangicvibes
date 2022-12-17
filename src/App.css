@@ -9,19 +9,19 @@ div#shopy:hover{
     @apply block;
 }
 h1{
-    @apply lg:text-4xl md:text-3xl text-2xl;
+    @apply lg:text-4xl md:text-3xl text-2xl font-[Calibri] text-[#2C296D] ;
 }
 h2{
-    @apply lg:text-3xl md:text-2xl text-xl;
+    @apply lg:text-3xl md:text-2xl text-xl text-[#95AE3C] ;
 }
 h3{
-    @apply lg:text-2xl md:text-xl text-lg;
+    @apply lg:text-2xl md:text-xl text-lg text-[#95AE3C] ;
 }
 h4{
-    @apply lg:text-xl md:text-lg text-base;
+    @apply lg:text-xl md:text-lg text-base text-[#95AE3C] ;
 }
 h5{
-    @apply lg:text-lg md:text-base text-sm;
+    @apply lg:text-lg md:text-base text-sm text-[#95AE3C] ;
 }
 .shopitems li:nth-child(n){
 @apply my-1 hover:text-[#95AE3C] hover:font-normal;

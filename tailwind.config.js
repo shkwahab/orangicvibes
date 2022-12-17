@@ -12,7 +12,11 @@ module.exports = {
       },
       animation:{
         "slideleft":"slideleft 1s  ease-in-out  "
+      },
+      backgroundImage:{
+        "heroslider1":"url('../public/hero1.png')"
       }
+
     },
    
   },

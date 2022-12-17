@@ -32,13 +32,13 @@ const Navbar = (props) => {
     return (
         <>
   
-            <section id="navbar ">
+            <section id="navbar" className='  sticky top-0 z-10'>
                 <div className=" container">
                     <div className="row  bg-white  align-self-center items-center">
                         <div className="col-lg-3  py-2 relative ">
-                            <h1 className='text-[#95AE3C] text-2xl font-medium'>
+                            <h3 className='font-medium'>
                                 {props.sitetitle}
-                            </h1>
+                            </h3>
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
@@ -151,7 +151,35 @@ const Navbar = (props) => {
                 </div>
                     <div className=" bg-black h-[1px] bg-opacity-10 "></div>
             </section>
-
+            <section id="hero">
+                <section id="slider1">
+                <div className=" container-fluid mt-[1px] ">
+                     <div className="row bg-[#faf5f5] bg-opacity-50  h-[60vh] ">
+                        <div className="col-7  py-20">
+                            <div className="col ml-10">
+                                <h4>
+                                    Top Seller in the Week
+                                </h4>
+                                <h1 className=' w-9/12 font-medium my-8 lg:text-7xl'>
+                                    Choose Your Healty Life Style
+                                </h1>
+                                <p className="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
+                                </p>
+                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                    Shop Now
+                                </button>
+                            </div>
+                        </div>
+                        <div className="col-5" >
+                            <div className=" flex justify-end mt-20 w-11/12">
+                            <img src="/hero1.png" alt="" />
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                </section>
+            </section>
         </>
     )
 }
