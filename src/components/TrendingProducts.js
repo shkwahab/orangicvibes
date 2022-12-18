@@ -1,7 +1,11 @@
 import React from 'react'
 import { AiOutlineStar } from "react-icons/ai"
+import Glider from 'react-glider';
+import 'glider-js/glider.min.css';
+
+
 const TrendingProducts = () => {
-    
+
     const data = [
         {
             "_id": "1",
@@ -51,10 +55,22 @@ const TrendingProducts = () => {
             "price": 55,
             "img_url": "/dragon.jpeg"
         },
+        {
+            "_id": "7",
+            "item_name": "Chill Fruits",
+            "category": "fruits",
+            "discout": 2,
+            "price": 55,
+            "img_url": "/dragon.jpeg"
+        },
+
+
     ]
+   
+
     const Trend = data.map((TrendingProducts) => {
-        return <div key={TrendingProducts._id} className="col-2">
-            <div className="card  shadow-lg rounded-3xl">
+        return <div key={TrendingProducts._id} className="mx-3">
+            <div className="card  shadow-md rounded-3xl">
                 <div className="flex justify-center ">
                     <img src={TrendingProducts.img_url} alt={TrendingProducts.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
@@ -83,6 +99,7 @@ const TrendingProducts = () => {
 
                     </div>
                 </div>
+
             </div>
         </div>
     })
@@ -99,13 +116,23 @@ const TrendingProducts = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt aspernatur, necessitatibus earum fugiat quas id?
                 </p>
                 <div className="container">
-                    
-                        <div className="row">
-                            {Trend}
-                        </div>
-                    
+                    {/* <div className="row">
+                        {Trend}
+                    </div> */}
+                    <Glider
+                        draggable
+                        slidesToShow={6}
+                        hasArrows
+                        hasDots
+                        
+                        slidesToScroll={1}
+                    > 
+                                {Trend}
+                    </Glider>
                 </div>
             </div>
+
+
         </>
     )
 }

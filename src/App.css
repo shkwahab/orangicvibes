@@ -32,6 +32,20 @@ h6{
 .card{
     @apply border-none !important;
 }
+.glider-next{
+    @apply text-[#95AE3C] !important;
+}
+.glider-prev{
+    @apply text-[#95AE3C] !important;
+}
+div.glider-dots{
+    @apply my-4 !important;
+}
+button.active {
+    @apply bg-[#95AE3C] !important;
+}
+
+
 
 
 
