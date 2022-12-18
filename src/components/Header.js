@@ -68,7 +68,7 @@ const Navbar = (props) => {
                                 <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-16  ${isShopSlider ? "" : "hidden"} absolute py-4  left-[12rem]  justify-center  `}>
                                     <div className=" border-t-2 border-[#95AE3C]">
                                     <div className="   container-fluid  rounded-b-md
-                                      bg-food bg-cover shadow-lg  bg-bottom px-4 py-8">
+                                      bg-food bg-cover shadow-lg  bg-right px-4 py-8">
                                         <div className="row text-black  w-[800px]">
                                             <div className="col-3">
                                                 <div className="">
@@ -102,8 +102,8 @@ const Navbar = (props) => {
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 translate cursor-pointer">
-                                                            {props.Shop1ListItem6}
+                                                            <li className=" invisible">
+                                                            space
                                                             </li>
                                                             </div>
                                                         <div className="col">
