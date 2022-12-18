@@ -44,7 +44,7 @@ const Navbar = (props) => {
         SetHero3(true);
     }
   
-   },2000)
+   },3000)
     return (
         <>
   

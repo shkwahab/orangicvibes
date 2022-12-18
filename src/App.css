@@ -23,8 +23,12 @@ h4{
 h5{
     @apply lg:text-lg md:text-base text-sm text-[#95AE3C] ;
 }
+h6{
+    @apply  md:text-base text-sm text-[#2C296D] ;
+}
 .shopitems li:nth-child(n){
 @apply my-1 hover:text-[#95AE3C] hover:font-normal;
 }
+
 
 
