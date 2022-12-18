@@ -39,29 +39,29 @@ const SpecialProducts = () => {
     },
 
   ]
+ const special= data.map((specialProducts) => {
+  return <div className="col-2" key={specialProducts._id}>
+    <div className=" bg-white p-[19px]  rounded-2xl  shadow-2xl ">
+      <div id="plusicon" className=" flex justify-center relative   rounded-full">
+        <div  className='z-10 bg-gray-600  rounded-full'>
+          <img src={specialProducts.image_url} alt={specialProducts.item_name} className=' rounded-full  focus:opacity-25   w-[80px] h-[80px] ' />
+        </div>
+       
+      </div>
+      <div className=" card-body text-center">
+        <h6 className="  mt-2 mb-[2px] text-[#2C296D] capitalize">{specialProducts.item_name}</h6>
+        <p className="">{specialProducts.item_quantity}</p>
+      </div>
+    </div>
+  </div>
 
+})
   return (
     <>
       <div className="container">
         <div className="row">
           {
-            data.map((specialProducts) => {
-              return <div className="col-2" key={specialProducts._id}>
-                <div className=" bg-white p-[19px]  rounded-2xl  shadow-2xl ">
-                  <div id="plusicon" className=" flex justify-center relative   rounded-full">
-                    <div  className='z-10 bg-gray-600  rounded-full'>
-                      <img src={specialProducts.image_url} alt={specialProducts.item_name} className=' rounded-full  focus:opacity-25   w-[80px] h-[80px] ' />
-                    </div>
-                   
-                  </div>
-                  <div className=" card-body text-center">
-                    <h6 className="  mt-2 mb-[2px] text-[#2C296D] capitalize">{specialProducts.item_name}</h6>
-                    <p className="">{specialProducts.item_quantity}</p>
-                  </div>
-                </div>
-              </div>
-
-            })
+           special
           }
 
         </div>
