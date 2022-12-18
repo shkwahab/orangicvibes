@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../components/Header"
 import SpecialProducts from '../components/SpecialProducts'
 import TrendingProducts from '../components/TrendingProducts'
+import Jumbotron from '../components/Jumbotron'
 const Home = () => {
   return (
     <>
@@ -29,6 +30,9 @@ const Home = () => {
       </div>
       <div className=" my-20">
         <TrendingProducts/>
+      </div>
+      <div className=" my-20">
+        <Jumbotron/>
       </div>
     </>
   )

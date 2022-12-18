@@ -1,14 +1,13 @@
 import React from 'react'
-import {AiOutlineStar} from "react-icons/ai"
+import { AiOutlineStar } from "react-icons/ai"
 const TrendingProducts = () => {
     const data = [
         {
             "_id": "1",
             "item_name": "Peach",
             "category": "fruits",
-            "discout":9,
+            "discout": 9,
             "price": 55,
-            "featured": "hot",
             "img_url": "/peach.jpg"
         },
         {
@@ -17,25 +16,22 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 15,
             "price": 55,
-            "featured": "hot",
             "img_url": "/watermelon.jpeg"
         },
         {
             "_id": "3",
-            "item_name":"Dragon Fruit",
+            "item_name": "Dragon Fruit",
             "category": "fruits",
             "discout": 2,
             "price": 55,
-            "featured": "hot",
             "img_url": "/dragon.jpeg"
         },
         {
             "_id": "4",
             "item_name": "Peach",
             "category": "fruits",
-            "discout":9,
+            "discout": 9,
             "price": 55,
-            "featured": "hot",
             "img_url": "/peach.jpg"
         },
         {
@@ -44,16 +40,14 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 15,
             "price": 55,
-            "featured": "hot",
             "img_url": "/watermelon.jpeg"
         },
         {
             "_id": "6",
-            "item_name":"Dragon Fruit",
+            "item_name": "Dragon Fruit",
             "category": "fruits",
             "discout": 2,
             "price": 55,
-            "featured": "hot",
             "img_url": "/dragon.jpeg"
         },
     ]
@@ -86,20 +80,20 @@ const TrendingProducts = () => {
                                                 {TrendingProducts.item_name}
                                             </h5>
                                             <div className="flex">
-                                                <AiOutlineStar className=' cursor-pointer text-yellow-400'/>
-                                                <AiOutlineStar className=' cursor-pointer text-yellow-400'/>
-                                                <AiOutlineStar className=' cursor-pointer text-yellow-400'/>
-                                                <AiOutlineStar className=' cursor-pointer text-yellow-400'/>
-                                                <AiOutlineStar className=' cursor-pointer text-yellow-400'/>
+                                                <AiOutlineStar className=' cursor-pointer text-yellow-400' />
+                                                <AiOutlineStar className=' cursor-pointer text-yellow-400' />
+                                                <AiOutlineStar className=' cursor-pointer text-yellow-400' />
+                                                <AiOutlineStar className=' cursor-pointer text-yellow-400' />
+                                                <AiOutlineStar className=' cursor-pointer text-yellow-400' />
                                             </div>
                                             <div className=" text-left flex mt-2">
 
-                                               <h5 className=" text-red-400">
-                                                {"$"+TrendingProducts.price}
-                                               </h5 >
-                                               <h6 className='mt-1 text-black line-through mx-1'>
-                                                ${TrendingProducts.price*(100-TrendingProducts.discout)/100}
-                                               </h6>
+                                                <h5 className=" text-red-400">
+                                                    {"$" + TrendingProducts.price}
+                                                </h5 >
+                                                <h6 className='mt-1 text-black line-through mx-1'>
+                                                    ${TrendingProducts.price * (100 - TrendingProducts.discout) / 100}
+                                                </h6>
 
                                             </div>
                                         </div>
