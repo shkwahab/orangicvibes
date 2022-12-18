@@ -48,7 +48,7 @@ const Navbar = (props) => {
     return (
         <>
   
-            <section id="navbar" className='bg-white  sticky top-0 z-10'>
+            <section id="navbar" className='bg-white  sticky top-0 z-50'>
                 <div className=" container">
                     <div className="row    align-self-center items-center">
                         <div className="col-lg-3  py-4 relative ">
@@ -58,8 +58,8 @@ const Navbar = (props) => {
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
-                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
-                                <div onMouseEnter={ShopSlider} className=" py-4 cursor-pointer  mx-2">
+                                <li className=" hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
+                                <div onMouseEnter={ShopSlider} className="hover:text-[#95AE3C] py-4 cursor-pointer  mx-2">
                                     <div className="flex items-center cursor-pointer">
                                         <li className=" ">{props.category2}</li>
                                         <IoIosArrowDown />
@@ -72,7 +72,7 @@ const Navbar = (props) => {
                                         <div className="row text-black  w-[800px]">
                                             <div className="col-3">
                                                 <div className="">
-                                                    <h5 className='text-[#2C296D]'>
+                                                    <h5 className=' font-semibold text-[#2C296D]'>
                                                         {props.ShopHeading1}
                                                     </h5>
                                                     <div  className="row shopitems flex-col">
@@ -115,17 +115,17 @@ const Navbar = (props) => {
                                                 </div>
                                             </div>
                                             <div className="col-3">
-                                                <h5 className='text-[#2C296D] font-semibold'>
+                                                <h5 className=' text-[#2C296D] font-semibold'>
                                                 {props.ShopHeading2}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className='text-[#2C296D] font-semibold'>
+                                                <h5 className=' text-[#2C296D] font-semibold'>
                                                 {props.ShopHeading3}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className='text-[#2C296D] font-semibold'>
+                                                <h5 className=' text-[#2C296D] font-semibold'>
                                                 {props.ShopHeading4}
                                                 </h5>
                                                 </div>
@@ -133,10 +133,10 @@ const Navbar = (props) => {
                                     </div>
                                     </div>
                                 </div>
-                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
-                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
-                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
-                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
+                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
+                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
+                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
+                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
                             </ul>
                         </div>
                         <div className="col-lg-3 py-4  flex justify-end ">
