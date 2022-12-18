@@ -58,7 +58,7 @@ const Navbar = (props) => {
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
-                                <li className=" py-4 nav-item mx-2">{props.category1}</li>
+                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
                                 <div onMouseEnter={ShopSlider} className=" py-4 cursor-pointer  mx-2">
                                     <div className="flex items-center cursor-pointer">
                                         <li className=" ">{props.category2}</li>
@@ -133,10 +133,10 @@ const Navbar = (props) => {
                                     </div>
                                     </div>
                                 </div>
-                                <li className=" py-4 nav-item mx-2">{props.category3}</li>
-                                <li className=" py-4 nav-item mx-2">{props.category4}</li>
-                                <li className=" py-4 nav-item mx-2">{props.category5}</li>
-                                <li className=" py-4 nav-item mx-2">{props.category6}</li>
+                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
+                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
+                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
+                                <li className=" cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
                             </ul>
                         </div>
                         <div className="col-lg-3 py-4  flex justify-end ">
