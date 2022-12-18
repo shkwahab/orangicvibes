@@ -48,9 +48,9 @@ const Navbar = (props) => {
     return (
         <>
   
-            <section id="navbar" className='  sticky top-0 z-10'>
+            <section id="navbar" className='bg-white  sticky top-0 z-10'>
                 <div className=" container">
-                    <div className="row  bg-white  align-self-center items-center">
+                    <div className="row    align-self-center items-center">
                         <div className="col-lg-3  py-4 relative ">
                             <h3 className='font-medium'>
                                 {props.sitetitle}

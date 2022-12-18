@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../components/Header"
 import SpecialProducts from '../components/SpecialProducts'
+import TrendingProducts from '../components/TrendingProducts'
 const Home = () => {
   return (
     <>
@@ -25,6 +26,9 @@ const Home = () => {
       />
       <div className=" my-8 ">
       <SpecialProducts/>
+      </div>
+      <div className=" my-20">
+        <TrendingProducts/>
       </div>
     </>
   )
