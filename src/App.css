@@ -39,7 +39,7 @@ h6{
     @apply text-[#95AE3C] !important;
 }
 div.glider-dots{
-    @apply my-4 !important;
+    @apply my-8 !important;
 }
 button.active {
     @apply bg-[#95AE3C] !important;

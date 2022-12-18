@@ -3,6 +3,7 @@ import React from 'react'
 const Jumbotron = () => {
   return (
     <>
+    <section id="jumbotron" className=' bg-[#f8f8f8] py-20'>
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -25,13 +26,23 @@ const Jumbotron = () => {
              
             </div>
             <div className="row">
-              {/* <div className="col-6">a</div>
-              <div className="col-6">a</div> */}
+              <div className="col-6">
+                <h6 className="">
+                FRESH FRUITS:
+                </h6>
+              </div>
+              <div className="col-6">
+                <h6 className="">
+                INGREDIENT:
+                </h6>
+
+              </div>
             </div>
 
           </div>
         </div>
       </div>
+    </section>
     </>
   )
 }

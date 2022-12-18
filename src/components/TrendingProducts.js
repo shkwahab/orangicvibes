@@ -67,7 +67,6 @@ const TrendingProducts = () => {
 
     ]
    
-
     const Trend = data.map((TrendingProducts) => {
         return <div key={TrendingProducts._id} className="mx-3">
             <div className="card  shadow-md rounded-3xl">
@@ -116,15 +115,12 @@ const TrendingProducts = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt aspernatur, necessitatibus earum fugiat quas id?
                 </p>
                 <div className="container">
-                    {/* <div className="row">
-                        {Trend}
-                    </div> */}
+
                     <Glider
                         draggable
                         slidesToShow={6}
                         hasArrows
                         hasDots
-                        
                         slidesToScroll={1}
                     > 
                                 {Trend}

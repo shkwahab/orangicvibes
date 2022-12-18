@@ -31,7 +31,7 @@ const Home = () => {
       <div className=" my-20">
         <TrendingProducts/>
       </div>
-      <div className=" my-20">
+      <div className=" my-16">
         <Jumbotron/>
       </div>
     </>
