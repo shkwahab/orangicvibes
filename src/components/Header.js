@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io"
 import { BiSearch, BiUser } from "react-icons/bi"
 import { FiHeart } from "react-icons/fi"
 import { HiOutlineShoppingBag } from "react-icons/hi"
-import { HiBars3 } from "react-icons/hi2"
+// import { HiBars3 } from "react-icons/hi2"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 const Navbar = (props) => {
 

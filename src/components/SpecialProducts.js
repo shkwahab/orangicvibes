@@ -40,8 +40,6 @@ const SpecialProducts = () => {
 
   ]
 
-
-
   return (
     <>
       <div className="container">
@@ -49,7 +47,6 @@ const SpecialProducts = () => {
           {
             data.map((specialProducts) => {
               return <div className="col-2" key={specialProducts._id}>
-
                 <div className=" bg-white p-[19px]  rounded-2xl  shadow-2xl ">
                   <div id="plusicon" className=" flex justify-center relative   rounded-full">
                     <div  className='z-10 bg-gray-600  rounded-full'>
