@@ -62,7 +62,7 @@ const Jumbotron = () => {
                 </h6>
                 <div className=" border-b-[1px]  border-dashed bg-gray-600"></div>
                 <p className="text-sm mt-2 text-gray-500">
-                500ml – 1000ml
+                500ml - 1000ml
                 </p>
                 <button className=" text-white p-[12px] uppercase font-semibold px-[28px] my-3 bg-[#95AE3C] transition-all duration-300 hover:bg-[#849e28] rounded-full  ">
                    View More

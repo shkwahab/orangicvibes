@@ -16,7 +16,10 @@ module.exports = {
        
       },
       backgroundImage:{
-        "food":"url('../public/orangicfood.jpg')"
+        "food":"url('../public/orangicfood.jpg')",
+        "banner1":"url('../public/banner1.jpg')",
+        "banner2":"url('../public/banner2.jpg')",
+        "banner3":"url('../public/banner3.jpg')"
       }
 
     },
