@@ -8,10 +8,12 @@ module.exports = {
           "0%":{translate:"0px" },
           "50%":{translate:"30px" },
          "100%":{translate:"0px"}
-        }
+        },
+       
       },
       animation:{
-        "slideleft":"slideleft 1s  ease-in-out  "
+        "slideleft":"slideleft 1s  ease-in-out  ",
+       
       },
       backgroundImage:{
         "food":"url('../public/orangicfood.jpg')"
