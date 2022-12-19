@@ -11,6 +11,14 @@ const AllSpecialProducts = () => {
             Weekly Food Offers
             </h2>
         </div>
+        
+            <ul className="flex justify-center">
+            <li className="mx-3 active  font-semibold">All Products</li>
+            <li className="mx-3  font-semibold">Fresh Meat</li>
+            <li className="mx-3  font-semibold">Fresh Vegetables</li>
+            <li className="mx-3  font-semibold">Biscuits Snack</li>
+            </ul>
+       
         </>
     )
 }

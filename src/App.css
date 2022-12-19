@@ -45,7 +45,9 @@ button.active {
     @apply bg-[#95AE3C] !important;
 }
 
-
+li.active{
+    @apply text-[#95AE3C];
+}
 
 
 
