@@ -17,12 +17,12 @@ const Jumbotron = () => {
                 <h5 className="">
                   ~ The Best For Your ~
                 </h5>
-                <h1 className=" lg:text-5xl    ">
+                <h2 className=" lg:text-5xl    ">
                   Organic Drinks 
-                </h1>
-                  <h1 className='lg:text-5xl  '>
+                </h2>
+                  <h2 className='lg:text-5xl  '>
                   Easy Healthy - Happy Life
-                  </h1>
+                  </h2>
               </div>
               <div className=' my-4 text-gray-600 text-sm'>The best Organic drink is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, dolorem.</div>
              

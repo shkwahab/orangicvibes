@@ -205,9 +205,9 @@ const Navbar = (props) => {
                                 <h4>
                                     Top Seller in the Week
                                 </h4>
-                                <h1 className=' w-8/12 font-medium my-8 lg:text-7xl'>
+                                <h2 className='font-[Calibri] w-8/12 font-medium my-8 lg:text-7xl text-[#2C296D]'>
                                    The Best Health Fresh
-                                </h1>
+                                </h2>
                                 <p className="">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
@@ -232,9 +232,9 @@ const Navbar = (props) => {
                                 <h4>
                                     Top Seller in the Week
                                 </h4>
-                                <h1 className=' w-10/12 font-medium my-8 lg:text-7xl'>
+                                <h2 className='text-[#2C296D] font-[Calibri] w-10/12 font-medium my-8 lg:text-7xl'>
                                    Fresh Bread Oatmeal Crumble
-                                </h1>
+                                </h2>
                                 <p className="">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
