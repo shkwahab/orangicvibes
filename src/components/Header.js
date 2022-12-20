@@ -52,7 +52,7 @@ const Navbar = (props) => {
                 <div className=" container">
                     <div className="row    align-self-center items-center">
                         <div className="col-lg-3  py-4 relative ">
-                            <h3 className=''>
+                            <h3 className=' font-Jost'>
                                 {props.sitetitle}
                             </h3>
                         </div>
@@ -72,32 +72,32 @@ const Navbar = (props) => {
                                         <div className="row text-black  w-[800px]">
                                             <div className="col-3">
                                                 <div className=" font-Jost">
-                                                    <h5 className=' font-semibold text-[#2C296D]'>
+                                                    <h5 className='font-QuickSand font-bold text-[#2C296D]'>
                                                         {props.ShopHeading1}
                                                     </h5>
                                                     <div  className="row shopitems flex-col">
                                                         <div  className="col ">
-                                                            <li  className="  hover:animate-slideleft  hover:translate-x-5  cursor-pointer">
+                                                            <li  className="  hover:animate-slideleft  hover:translate-x-5   font-Jost  cursor-pointer">
                                                             {props.Shop1ListItem1}
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 cursor-pointer">
+                                                            <li className="  hover:animate-slideleft hover:translate-x-5  font-Jost  cursor-pointer">
                                                             {props.Shop1ListItem2}
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 cursor-pointer">
+                                                            <li className="  hover:animate-slideleft hover:translate-x-5  font-Jost cursor-pointer">
                                                             {props.Shop1ListItem3}
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 cursor-pointer">
+                                                            <li className="  hover:animate-slideleft hover:translate-x-5  font-Jost  cursor-pointer">
                                                             {props.Shop1ListItem4}
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 cursor-pointer">
+                                                            <li className="  hover:animate-slideleft hover:translate-x-5 font-Jost  cursor-pointer">
                                                             {props.Shop1ListItem5}
                                                             </li>
                                                             </div>
@@ -115,17 +115,17 @@ const Navbar = (props) => {
                                                 </div>
                                             </div>
                                             <div className="col-3">
-                                                <h5 className=' text-[#2C296D] font-semibold'>
+                                                <h5 className=' font-QuickSand text-[#2C296D] font-bold'>
                                                 {props.ShopHeading2}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className=' text-[#2C296D] font-semibold'>
+                                                <h5 className=' font-QuickSand text-[#2C296D] font-bold'>
                                                 {props.ShopHeading3}
                                                 </h5>
                                                 </div>
                                             <div className="col-3">
-                                                <h5 className=' text-[#2C296D] font-semibold'>
+                                                <h5 className=' font-QuickSand text-[#2C296D] font-bold'>
                                                 {props.ShopHeading4}
                                                 </h5>
                                                 </div>
