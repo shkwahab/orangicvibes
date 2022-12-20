@@ -568,10 +568,10 @@ const AllSpecialProducts = () => {
                     <img src={Snack_Biscuits.img_url} alt={Snack_Biscuits.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
                 <div className="card-body bg-gray-300 bg-opacity-20 mt-4">
-                    <h6 className="m-0 cursor-pointer text-black text-left capitalize">
+                    <h6 className="m-0 cursor-pointer text-black text-left capitalize text-sm font-Jost">
                         {Snack_Biscuits.category}
                     </h6>
-                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left'>
+                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left font-Jost'>
                         {Snack_Biscuits.item_name}
                     </h5>
                     <div className="flex">
@@ -583,10 +583,10 @@ const AllSpecialProducts = () => {
                     </div>
                     <div className=" text-left flex mt-2">
 
-                        <h5 className=" text-red-400">
+                        <h5 className=" text-red-500 font-Jost font-semibold">
                             {"$" + Snack_Biscuits.price}
                         </h5 >
-                        <h6 className='mt-1 text-black line-through mx-1'>
+                        <h6 className='mt-1 text-gray-400 line-through mx-1 font-medium font-Jost'>
                             ${Snack_Biscuits.price * (100 - Snack_Biscuits.discout) / 100}
                         </h6>
 
@@ -594,19 +594,19 @@ const AllSpecialProducts = () => {
                     {Snack_Biscuits._id === getId ?
                         <>
                             <div className={` my-3`}>
-                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
+                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm font-Jost  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
                                     Add to Cart
                                 </button>
                             </div>
                             <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
-                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1  uppercase'>
                                     {`Type: ${Snack_Biscuits.type}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`Mfg: ${Snack_Biscuits.mfg}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`LIFE: ${Snack_Biscuits.life}`}
                                 </div>
 
@@ -630,10 +630,10 @@ const AllSpecialProducts = () => {
                     <img src={Fresh_Veges.img_url} alt={Fresh_Veges.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
                 <div className="card-body bg-gray-300 bg-opacity-20 mt-4">
-                    <h6 className="m-0 cursor-pointer text-black text-left capitalize">
+                    <h6 className="m-0 cursor-pointer text-black text-left capitalize text-sm font-Jost">
                         {Fresh_Veges.category}
                     </h6>
-                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left'>
+                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left font-Jost'>
                         {Fresh_Veges.item_name}
                     </h5>
                     <div className="flex">
@@ -645,10 +645,10 @@ const AllSpecialProducts = () => {
                     </div>
                     <div className=" text-left flex mt-2">
 
-                        <h5 className=" text-red-400">
+                        <h5 className=" text-red-500 font-Jost font-semibold">
                             {"$" + Fresh_Veges.price}
                         </h5 >
-                        <h6 className='mt-1 text-black line-through mx-1'>
+                        <h6 className='mt-1 text-gray-400 line-through mx-1 font-medium font-Jost'>
                             ${Fresh_Veges.price * (100 - Fresh_Veges.discout) / 100}
                         </h6>
 
@@ -656,19 +656,19 @@ const AllSpecialProducts = () => {
                     {Fresh_Veges._id === getId ?
                         <>
                             <div className={` my-3`}>
-                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
+                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm font-Jost  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
                                     Add to Cart
                                 </button>
                             </div>
                             <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
-                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1  uppercase'>
                                     {`Type: ${Fresh_Veges.type}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`Mfg: ${Fresh_Veges.mfg}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`LIFE: ${Fresh_Veges.life}`}
                                 </div>
 
@@ -692,10 +692,10 @@ const AllSpecialProducts = () => {
                     <img src={Fresh_Meat.img_url} alt={Fresh_Meat.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
                 <div className="card-body bg-gray-300 bg-opacity-20 mt-4">
-                    <h6 className="m-0 cursor-pointer text-black text-left capitalize">
+                    <h6 className="m-0 cursor-pointer text-black text-left capitalize text-sm font-Jost">
                         {Fresh_Meat.category}
                     </h6>
-                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left'>
+                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left font-Jost'>
                         {Fresh_Meat.item_name}
                     </h5>
                     <div className="flex">
@@ -707,10 +707,10 @@ const AllSpecialProducts = () => {
                     </div>
                     <div className=" text-left flex mt-2">
 
-                        <h5 className=" text-red-400">
+                        <h5 className=" text-red-500 font-Jost font-semibold">
                             {"$" + Fresh_Meat.price}
                         </h5 >
-                        <h6 className='mt-1 text-black line-through mx-1'>
+                        <h6 className='mt-1 text-gray-400 line-through mx-1 font-medium font-Jost'>
                             ${Fresh_Meat.price * (100 - Fresh_Meat.discout) / 100}
                         </h6>
 
@@ -718,19 +718,19 @@ const AllSpecialProducts = () => {
                     {Fresh_Meat._id === getId ?
                         <>
                             <div className={` my-3`}>
-                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
+                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm font-Jost  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
                                     Add to Cart
                                 </button>
                             </div>
                             <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
-                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1  uppercase'>
                                     {`Type: ${Fresh_Meat.type}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`Mfg: ${Fresh_Meat.mfg}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`LIFE: ${Fresh_Meat.life}`}
                                 </div>
 
@@ -754,10 +754,10 @@ const AllSpecialProducts = () => {
                     <img src={TrendingProducts.img_url} alt={TrendingProducts.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
                 <div className="card-body bg-gray-300 bg-opacity-20 mt-4">
-                    <h6 className="m-0 cursor-pointer text-black text-left capitalize">
+                    <h6 className="m-0 cursor-pointer text-black text-left capitalize text-sm font-Jost">
                         {TrendingProducts.category}
                     </h6>
-                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left'>
+                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left font-Jost'>
                         {TrendingProducts.item_name}
                     </h5>
                     <div className="flex">
@@ -769,10 +769,10 @@ const AllSpecialProducts = () => {
                     </div>
                     <div className=" text-left flex mt-2">
 
-                        <h5 className=" text-red-400">
+                        <h5 className=" text-red-500 font-Jost font-semibold">
                             {"$" + TrendingProducts.price}
                         </h5 >
-                        <h6 className='mt-1 text-black line-through mx-1'>
+                        <h6 className='mt-1 text-gray-400 line-through mx-1 font-medium font-Jost'>
                             ${TrendingProducts.price * (100 - TrendingProducts.discout) / 100}
                         </h6>
 
@@ -780,19 +780,19 @@ const AllSpecialProducts = () => {
                     {TrendingProducts._id === getId ?
                         <>
                             <div className={` my-3`}>
-                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
+                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm font-Jost  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
                                     Add to Cart
                                 </button>
                             </div>
                             <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
-                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1  uppercase'>
                                     {`Type: ${TrendingProducts.type}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`Mfg: ${TrendingProducts.mfg}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm font-Jost m-1 capitalize'>
                                     {`LIFE: ${TrendingProducts.life}`}
                                 </div>
 
@@ -842,19 +842,19 @@ const AllSpecialProducts = () => {
     return (
         <>
             <div className=" text-center">
-                <h6 className=' text-[#95AE3C]'>
+                <h6 className=' text-[#95AE3C] m-0 text-lg font-Schoolbell'>
                     {`~ Special Products ~`}
                 </h6>
-                <h2 className=' text-[#2C296D] '>
+                <h2 className=' font-black mb-3 text-[#2C296D] font-QuickSand'>
                     Weekly Food Offers
                 </h2>
             </div>
 
             <ul className="flex justify-center">
-                <li className={`mx-3 cursor-pointer ${allproducts?"active":""}  font-semibold`} onClick={ShowingAllProducts}>All Products</li>
-                <li className={`mx-3 cursor-pointer ${fresh_meat?"active":""}  font-semibold`} onClick={MeatProducts}>Fresh Meat</li>
-                <li className={`mx-3 ${fresh_vegetables?"active":""} cursor-pointer  font-semibold`} onClick={FreshVeges}>Fresh Vegetables</li>
-                <li className={`mx-3 ${Snack?"active":""} cursor-pointer  font-semibold`} onClick={Snacky}>Biscuits Snack</li>
+                <li className={`mx-3 font-Jost cursor-pointer ${allproducts?"active":""}  font-semibold text-gray-700`} onClick={ShowingAllProducts}>All Products</li>
+                <li className={`mx-3 font-Jost cursor-pointer ${fresh_meat?"active":""}  font-semibold text-gray-700`} onClick={MeatProducts}>Fresh Meat</li>
+                <li className={`mx-3 font-Jost ${fresh_vegetables?"active":""} cursor-pointer  font-semibold text-gray-700`} onClick={FreshVeges}>Fresh Vegetables</li>
+                <li className={`mx-3 font-Jost ${Snack?"active":""} cursor-pointer  font-semibold text-gray-700`} onClick={Snacky}>Biscuits Snack</li>
             </ul>
            
             {

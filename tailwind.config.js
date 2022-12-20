@@ -22,8 +22,12 @@ module.exports = {
         "banner3":"url('../public/banner3.jpg')",
         "jumbotron":"url('../public/jumbotron2.png')"
       }
-
     },
+    fontFamily:{
+      "QuickSand":'Quicksand',
+      "Jost":'Jost',
+      "Schoolbell":'Schoolbell',
+    }
    
   },
   plugins: [],

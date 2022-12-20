@@ -105,10 +105,10 @@ const TrendingProducts = () => {
                     <img src={TrendingProducts.img_url} alt={TrendingProducts.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
                 <div className="card-body bg-gray-300 bg-opacity-20 mt-4">
-                    <h6 className="m-0 cursor-pointer text-black text-left capitalize">
+                    <h6 className="m-0 font-Jost cursor-pointer text-black text-left capitalize">
                         {TrendingProducts.category}
                     </h6>
-                    <h5 className='mt-1 cursor-pointer capitalize text-[#2C296D] text-left'>
+                    <h5 className='mt-1 font-Jost cursor-pointer capitalize text-[#2C296D] text-left'>
                         {TrendingProducts.item_name}
                     </h5>
                     <div className="flex">
@@ -120,10 +120,10 @@ const TrendingProducts = () => {
                     </div>
                     <div className=" text-left flex mt-2">
 
-                        <h5 className=" text-red-400">
+                        <h5 className=" font-QuickSand text-red-500 font-bold">
                             {"$" + TrendingProducts.price}
                         </h5 >
-                        <h6 className='mt-1 text-black line-through mx-1'>
+                        <h6 className='mt-1 text-black line-through mx-1 font-Jost '>
                             ${TrendingProducts.price * (100 - TrendingProducts.discout) / 100}
                         </h6>
 
@@ -137,13 +137,13 @@ const TrendingProducts = () => {
                             </div>
                             <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
-                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                <div className=' text-gray-600 font-medium text-sm m-1 font-Jost uppercase'>
                                     {`Type: ${TrendingProducts.type}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm m- font-Jost capitalize'>
                                     {`Mfg: ${TrendingProducts.mfg}`}
                                 </div>
-                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                <div className=' text-gray-600 font-medium text-sm m- font-Jost capitalize'>
                                     {`LIFE: ${TrendingProducts.life}`}
                                 </div>
 
@@ -159,13 +159,13 @@ const TrendingProducts = () => {
     return (
         <>
             <div className=" text-center relative ">
-                <h5 className="">
+                <h5 className=" font-Schoolbell">
                     {`~ Trending Products ~`}
                 </h5>
-                <h2 className="text-[#2C296D] ">
+                <h2 className="text-[#2C296D] font-QuickSand font-bold">
                     Weekly Food Offers
                 </h2>
-                <p>
+                <p className=' font-Jost'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt aspernatur, necessitatibus earum fugiat quas id?
                 </p>
                 

@@ -1,7 +1,7 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 div#shopslider:hover  div#shopy{
     @apply block;
 }
@@ -62,7 +62,6 @@ li.active{
 .kXteup{
     @apply bg-transparent;
 }
-
 
 
 

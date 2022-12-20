@@ -49,8 +49,8 @@ const SpecialProducts = () => {
        
       </div>
       <div className=" card-body text-center">
-        <h6 className="  mt-2 mb-[2px] text-[#2C296D] capitalize">{specialProducts.item_name}</h6>
-        <p className="">{specialProducts.item_quantity}</p>
+        <h6 className="  mt-2 mb-[2px] font-Jost font-semibold text-[#2C296D] capitalize">{specialProducts.item_name}</h6>
+        <p className="font-Jost text-sm">{specialProducts.item_quantity}</p>
       </div>
     </div>
   </div>

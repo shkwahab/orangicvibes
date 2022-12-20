@@ -52,7 +52,7 @@ const Navbar = (props) => {
                 <div className=" container">
                     <div className="row    align-self-center items-center">
                         <div className="col-lg-3  py-4 relative ">
-                            <h3 className='font-medium'>
+                            <h3 className=''>
                                 {props.sitetitle}
                             </h3>
                         </div>
@@ -71,7 +71,7 @@ const Navbar = (props) => {
                                       bg-food bg-cover shadow-lg  bg-right px-4 py-8">
                                         <div className="row text-black  w-[800px]">
                                             <div className="col-3">
-                                                <div className="">
+                                                <div className=" font-Jost">
                                                     <h5 className=' font-semibold text-[#2C296D]'>
                                                         {props.ShopHeading1}
                                                     </h5>
@@ -175,16 +175,16 @@ const Navbar = (props) => {
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
                         <div className="col-7  py-28">
                             <div className="col ml-10">
-                                <h4>
+                                <h4 className=' font-Jost'>
                                     Top Seller in the Week
                                 </h4>
-                                <h1 className=' w-9/12 font-medium my-8 lg:text-7xl'>
+                                <h1 className=' w-9/12  my-8 lg:text-6xl font-QuickSand font-bold'>
                                     Choose Your Healty Life Style
                                 </h1>
-                                <p className="">
+                                <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
@@ -202,16 +202,16 @@ const Navbar = (props) => {
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
                         <div className="col-7  py-28">
                             <div className="col ml-10">
-                                <h4>
+                                <h4 className=' font-Jost'>
                                     Top Seller in the Week
                                 </h4>
-                                <h2 className='font-[Calibri] w-8/12 font-medium my-8 lg:text-7xl text-[#2C296D]'>
+                                <h2 className=' w-7/12  my-8 lg:text-6xl font-QuickSand font-bold text-[#2C296D]'>
                                    The Best Health Fresh
                                 </h2>
-                                <p className="">
+                                <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost  my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
@@ -229,16 +229,16 @@ const Navbar = (props) => {
                      <div className="row bg-[#faf5f5] bg-opacity-50   ">
                         <div className="col-7  py-28">
                             <div className="col ml-10">
-                                <h4>
+                                <h4 className=' font-Jost'>
                                     Top Seller in the Week
                                 </h4>
-                                <h2 className='text-[#2C296D] font-[Calibri] w-10/12 font-medium my-8 lg:text-7xl'>
+                                <h2 className='text-[#2C296D]  w-10/12  my-8 lg:text-6xl font-QuickSand font-bold'>
                                    Fresh Bread Oatmeal Crumble
                                 </h2>
-                                <p className="">
+                                <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-medium my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
