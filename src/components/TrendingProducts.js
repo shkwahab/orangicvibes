@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineStar } from "react-icons/ai"
-import Glider from 'react-glider';
-import 'glider-js/glider.min.css';
+import Carousel from 'react-elastic-carousel';
 
 
 const TrendingProducts = () => {
@@ -13,7 +12,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 9,
             "price": 55,
-            "img_url": "/peach.jpg"
+            "img_url": "/peach.jpg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "2",
@@ -21,7 +23,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 15,
             "price": 55,
-            "img_url": "/watermelon.jpeg"
+            "img_url": "/watermelon.jpeg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "3",
@@ -29,7 +34,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 2,
             "price": 55,
-            "img_url": "/dragon.jpeg"
+            "img_url": "/dragon.jpeg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "4",
@@ -37,7 +45,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 9,
             "price": 55,
-            "img_url": "/peach.jpg"
+            "img_url": "/peach.jpg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "5",
@@ -45,7 +56,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 15,
             "price": 55,
-            "img_url": "/watermelon.jpeg"
+            "img_url": "/watermelon.jpeg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "6",
@@ -53,7 +67,10 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 2,
             "price": 55,
-            "img_url": "/dragon.jpeg"
+            "img_url": "/dragon.jpeg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
         {
             "_id": "7",
@@ -61,15 +78,26 @@ const TrendingProducts = () => {
             "category": "fruits",
             "discout": 2,
             "price": 55,
-            "img_url": "/dragon.jpeg"
+            "img_url": "/dragon.jpeg",
+            "type": "organic",
+            "mfg": "August 3, 2022",
+            "life": "60 Days"
         },
 
 
     ]
+
+    const [getId, SetGetid] = useState(null);
    
+
+
     const Trend = data.map((TrendingProducts) => {
-        return <div key={TrendingProducts._id} className="mx-3">
-            <div className="card  shadow-md rounded-3xl">
+        return <div id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  " onMouseEnter={(e) => {
+            SetGetid(e.currentTarget.id);
+        }} onMouseLeave={() => {
+            SetGetid(null);
+        }}>
+            <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">
                     <img src={TrendingProducts.img_url} alt={TrendingProducts.item_name} className=" mt-4  w-[110px] h-[100px]" />
                 </div>
@@ -97,14 +125,37 @@ const TrendingProducts = () => {
                         </h6>
 
                     </div>
-                </div>
+                    {TrendingProducts._id === getId ?
+                        <>
+                            <div className={` my-3`}>
+                                <button className=" text-white p-[12px] uppercase font-semibold px-3 text-sm  hover:bg-[#95AE3C] transition-all duration-300  rounded-full bg-[#2C296D] ">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <div className={` my-2 ml-[2px] text-left font-[Calibri]}`}>
 
+                                <div className=' text-gray-600 font-medium text-sm m-1  uppercase'>
+                                    {`Type: ${TrendingProducts.type}`}
+                                </div>
+                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                    {`Mfg: ${TrendingProducts.mfg}`}
+                                </div>
+                                <div className=' text-gray-600 font-medium text-sm m-1 capitalize'>
+                                    {`LIFE: ${TrendingProducts.life}`}
+                                </div>
+
+                            </div>
+                        </>
+                        : ""
+                    }
+                </div>
             </div>
+
         </div>
     })
     return (
         <>
-            <div className=" text-center">
+            <div className=" text-center relative ">
                 <h5 className="">
                     {`~ Trending Products ~`}
                 </h5>
@@ -114,18 +165,17 @@ const TrendingProducts = () => {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt aspernatur, necessitatibus earum fugiat quas id?
                 </p>
-                <div className="container">
-
-                    <Glider
-                        draggable
-                        slidesToShow={6}
-                        hasArrows
-                        hasDots
-                        slidesToScroll={1}
-                    > 
-                                {Trend}
-                    </Glider>
+                
+                <div className=" container-fluid  absolute">
+                   
+                <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={true}  itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
+                    {Trend}
+                    </Carousel>
+                  
                 </div>
+            </div>
+            <div className="  invisible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, facilis. Odit dolorem expedita soluta beatae, nostrum quam ratione! Nobis blanditiis similique doloribus repellendus quae voluptatem numquam ea consequatur natus eum exercitationem consectetur saepe nam corrupti incidunt deleniti eligendi minus voluptatum, ex laboriosam obcaecati! Reprehenderit perferendis inventore dicta atque ducimus modi molestias ipsam officia molestiae id, recusandae quod ipsum distinctio quas natus quo? Ducimus illo deleniti veritatis quia, porro reiciendis voluptatem temporibus sapiente ex corporis exercitationem sit nam atque odio quas adipisci repellendus nisi at iste harum quos placeat. Id numquam ipsum voluptatibus cupiditate reiciendis! Saepe quasi cupiditate cumque laudantium quam tenetur veritatis. Voluptatum est assumenda consequatur autem, provident aliquam reprehenderit fuga a porro facilis nesciunt ab amet fugiat qui laborum voluptatem ipsa incidunt officiis praesentium, alias deleniti cumque! Minima, dicta dignissimos perferendis harum ex explicabo ducimus iusto! Eligendi eveniet architecto, animi dicta veritatis blanditiis quis consequuntur excepturi quos sunt quia natus a, harum eius nostrum quod voluptatem soluta iste. Qui provident corporis ipsam repudiandae nulla dolor molestias iure cum eveniet atque accusantium, in quis. Rerum numquam repudiandae facilis soluta, impedit molestias aliquam quia deserunt pariatur. Eius dignissimos excepturi tempora soluta saepe voluptate, magni, sunt suscipit, aspernatur dolorum officia numquam eaque!
             </div>
 
 

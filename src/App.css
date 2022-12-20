@@ -41,13 +41,26 @@ h6{
 div.glider-dots{
     @apply my-8 !important;
 }
-button.active {
-    @apply bg-[#95AE3C] !important;
+button.rec-dot_active {
+    @apply bg-[#95AE3C] border-none shadow-none !important;
+}
+button.rec-dot,button.rec-dot:hover{
+   
+    box-shadow:  0 0 1px 2px rgb(0 0 0 / 50%) !important;
+
+}
+.shadow-custom{
+   @apply shadow-md;
 }
 
 li.active{
     @apply text-[#95AE3C];
 }
+.kXteup{
+    @apply hover:bg-[#95AE3C] !important;
+}
+
+
 
 
 
