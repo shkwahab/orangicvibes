@@ -42,9 +42,7 @@ const Home = () => {
       <div className="my-20">
         <AllSpecialProducts/>
       </div>
-      <div className=' my-20'> 
-        s
-      </div>
+    
     </>
   )
 }
