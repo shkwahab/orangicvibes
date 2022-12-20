@@ -558,7 +558,7 @@ const AllSpecialProducts = () => {
     }
 
     const Snackers = data4.map((Snack_Biscuits) => {
-        return <div id={Snack_Biscuits._id} key={Snack_Biscuits._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${Snack ? "" : "hidden"} `} onMouseEnter={(e) => {
+        return <div id={Snack_Biscuits._id} key={Snack_Biscuits._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${Snack ? "" : "invisible"} `} onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
         }} onMouseLeave={() => {
             SetGetid(null);
@@ -620,7 +620,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const Fresh_Veges = data3.map((Fresh_Veges) => {
-        return <div id={Fresh_Veges._id} key={Fresh_Veges._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "hidden"} `} onMouseEnter={(e) => {
+        return <div id={Fresh_Veges._id} key={Fresh_Veges._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "invisible"} `} onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
         }} onMouseLeave={() => {
             SetGetid(null);
@@ -682,7 +682,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const FreshMeat = data2.map((Fresh_Meat) => {
-        return <div id={Fresh_Meat._id} key={Fresh_Meat._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_meat ? "" : "hidden"} `} onMouseEnter={(e) => {
+        return <div id={Fresh_Meat._id} key={Fresh_Meat._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_meat ? "" : "invisible"} `} onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
         }} onMouseLeave={() => {
             SetGetid(null);
@@ -744,7 +744,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const AllProducts = data.map((TrendingProducts) => {
-        return <div id={TrendingProducts._id} key={TrendingProducts._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${allproducts ? "" : "hidden"} `} onMouseEnter={(e) => {
+        return <div id={TrendingProducts._id} key={TrendingProducts._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
         }} onMouseLeave={() => {
             SetGetid(null);
@@ -856,28 +856,48 @@ const AllSpecialProducts = () => {
                 <li className={`mx-3 ${fresh_vegetables?"active":""} cursor-pointer  font-semibold`} onClick={FreshVeges}>Fresh Vegetables</li>
                 <li className={`mx-3 ${Snack?"active":""} cursor-pointer  font-semibold`} onClick={Snacky}>Biscuits Snack</li>
             </ul>
+           
             {
                 fresh_meat === false && allproducts === true && fresh_vegetables===false && Snack===false ?
+                <div className=" container-fluid  absolute">
                     <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                         {AllProducts}
                     </Carousel>
+                    </div>
                     : ""
             }
             {
-                allproducts === false && fresh_meat === true && fresh_vegetables===false && Snack === false? <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
+                
+                allproducts === false && fresh_meat === true && fresh_vegetables===false && Snack === false? 
+                <div className=" container-fluid  absolute">
+                <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                     {FreshMeat}
-                </Carousel> : ""
+                </Carousel> 
+                </div>
+                : ""
             }
             {
-                allproducts === false && fresh_meat === false && fresh_vegetables===true && Snack === false? <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
+                allproducts === false && fresh_meat === false && fresh_vegetables===true && Snack === false? 
+                <div className=" container-fluid  absolute">
+                <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                     {Fresh_Veges}
-                </Carousel> : ""
+                </Carousel>
+                </div>
+                 : ""
             }
             {
-                allproducts === false && fresh_meat === false && fresh_vegetables===false && Snack === true? <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
+                allproducts === false && fresh_meat === false && fresh_vegetables===false && Snack === true? 
+                <div className=" container-fluid  absolute">
+                <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                     {Snackers}
-                </Carousel> : ""
+                </Carousel> 
+                </div>
+                : ""
             }
+             <div className="  invisible">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium aliquam voluptatem odio quibusdam exercitationem, voluptatibus consectetur nam totam amet aut molestiae hic quisquam sequi vero provident labore numquam quos mollitia magnam unde possimus at. Nesciunt numquam, ad ipsum non sed temporibus et ullam iusto consequuntur dolores natus animi, architecto voluptas similique? Adipisci beatae reiciendis facere officia, iure a in quam unde consequatur, molestiae maiores ad veniam accusantium labore assumenda voluptatibus doloribus cupiditate! Dolorum expedita debitis praesentium veritatis maiores! Aliquam, atque saepe? Maiores, quis unde! Ipsam voluptatum animi aut nisi nulla commodi at? Possimus distinctio molestias temporibus perferendis, blanditiis animi quisquam repellat unde iure est aperiam adipisci excepturi architecto itaque quis. Recusandae doloremque possimus soluta aspernatur veniam in repellendus quas at excepturi voluptas, adipisci mollitia ea doloribus autem sed facere molestias id eum modi illo. Voluptas vero assumenda ab iste odit laboriosam sunt rem quae obcaecati? Ea incidunt culpa ducimus quam! Doloribus, pariatur veniam facere nemo nihil cum beatae modi esse ab odio sequi exercitationem nam porro perferendis dignissimos fugiat minus animi, mollitia eius asperiores illum? Aut nihil quis quaerat porro ab, esse nisi voluptatum quae quos aliquid assumenda ducimus officiis veniam perferendis omnis est ad nemo similique debitis saepe ratione fugit laudantium eligendi! Possimus eaque, aliquam, vel magnam amet eos ex reiciendis natus labore esse enim dolor alias debitis, excepturi commodi eum corporis obcaecati quia libero soluta sed provident. Quaerat debitis quis eius officia ratione assumenda voluptatum vel quod autem vero? Saepe similique tenetur commodi, sapiente quidem consequuntur quae aliquam quibusdam aliquid quam, excepturi aspernatur molestiae officiis a dolor animi fugit quo culpa! Veniam molestias a maiores nisi dolorem sapiente esse tenetur, dicta debitis necessitatibus officiis mollitia doloremque, laborum amet deserunt labore modi dignissimos? Cumque magnam quo, reprehenderit fuga voluptatibus hic modi, pariatur autem velit quae accusamus molestias sint accusantium.
+            </div>
+           
         </>
     )
 }

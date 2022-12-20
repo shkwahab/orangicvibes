@@ -5,6 +5,7 @@ import TrendingProducts from '../components/TrendingProducts'
 import Jumbotron from '../components/Jumbotron'
 import Offers from '../components/Offers'
 import AllSpecialProducts from '../components/AllSpecialProducts'
+import JumbotronSecond from '../components/JumbotronSecond'
 const Home = () => {
   return (
     <>
@@ -41,6 +42,9 @@ const Home = () => {
       </div>
       <div className="my-20">
         <AllSpecialProducts/>
+      </div>
+      <div className="my-20">
+        <JumbotronSecond/>
       </div>
     
     </>
