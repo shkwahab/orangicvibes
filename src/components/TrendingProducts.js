@@ -88,11 +88,14 @@ const TrendingProducts = () => {
     ]
 
     const [getId, SetGetid] = useState(null);
-   
+    const[onfocus,SetFoucus]=useState(true)
+  const Fouse=()=>{
+    SetFoucus(!onfocus);
+  }
 
 
     const Trend = data.map((TrendingProducts) => {
-        return <div id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  " onMouseEnter={(e) => {
+        return <div id={TrendingProducts._id} key={TrendingProducts._id} onMouseOver={Fouse} className="w-[400px] cursor-pointer  " onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
         }} onMouseLeave={() => {
             SetGetid(null);
@@ -168,7 +171,8 @@ const TrendingProducts = () => {
                 
                 <div className=" container-fluid  absolute">
                    
-                <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={true}  itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
+                 
+                <Carousel  className=' px-8' itemsToShow={6} enableAutoPlay={onfocus}  itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                     {Trend}
                     </Carousel>
                   

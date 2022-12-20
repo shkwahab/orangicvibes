@@ -59,6 +59,10 @@ li.active{
 .kXteup{
     @apply hover:bg-[#95AE3C] !important;
 }
+.kXteup{
+    @apply bg-transparent;
+}
+
 
 
 
