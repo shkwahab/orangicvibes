@@ -88,7 +88,7 @@ const Blog = () => {
                         <p className='text-prim text-sm mr-[12px]'>
                             {Posts.category}
                         </p>
-                        <p className=' text-sec text-sm mr-[6px]'>
+                        <p className=' capitalize text-sec text-sm mr-[6px]'>
                             {Posts.user_role}
                         </p>
                         <p className=' text-sec text-sm '>
