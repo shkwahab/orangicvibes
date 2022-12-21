@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Carousel from 'react-elastic-carousel';
 
 const Blog = () => {
@@ -77,8 +77,16 @@ const Blog = () => {
             feautured_img: "/dummypost.png"
         },
     ]
+    const[onfocus,SetFoucus]=useState(true)
+    const Fouse=()=>{
+        SetFoucus(false);
+    }
+    const unFocuse=()=>{
+        SetFoucus(true);
+      }
+    
     let Blog = data.map((Posts) => {
-        return <section className='mx-1 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
+        return <section onMouseEnter={Fouse} onMouseLeave={unFocuse}  className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
             <div className="card">
                 <div className="">
                     <img src={Posts.feautured_img} className=" card-img-top" alt={Posts.title} />
@@ -126,7 +134,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className="container my-4">
-                <Carousel className=''showArrows={false}  itemsToShow={4}  itemsToScroll={1} pagination={false} enableAutoPlay={true} autoPlaySpeed={3000}>
+                <Carousel className=''showArrows={false}  itemsToShow={3}  itemsToScroll={1} pagination={false} enableAutoPlay={onfocus} autoPlaySpeed={3000}>
                     {Blog}
                 </Carousel>
             </div>

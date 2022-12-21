@@ -90,15 +90,19 @@ const TrendingProducts = () => {
     const [getId, SetGetid] = useState(null);
     const[onfocus,SetFoucus]=useState(true)
   const Fouse=()=>{
-    SetFoucus(!onfocus);
+    SetFoucus(false);
+  }
+  const unFocuse=()=>{
+    SetFoucus(true);
   }
 
-
     const Trend = data.map((TrendingProducts) => {
-        return <div id={TrendingProducts._id} key={TrendingProducts._id} onMouseOver={Fouse} className="w-[400px] cursor-pointer  " onMouseEnter={(e) => {
+        return <div  id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  "  onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
+            Fouse();
         }} onMouseLeave={() => {
             SetGetid(null);
+            unFocuse();
         }}>
             <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">

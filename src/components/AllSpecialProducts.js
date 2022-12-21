@@ -554,14 +554,19 @@ const AllSpecialProducts = () => {
     const [fresh_vegetables, SetFreshVegetables] = useState(false);
     const [Snack, SetSnack] = useState(false);
     const Fouse = () => {
-        SetFoucus(!onfocus);
+        SetFoucus(false);
     }
+    const unFocuse=()=>{
+        SetFoucus(true);
+      }
 
     const Snackers = data4.map((Snack_Biscuits) => {
-        return <div id={Snack_Biscuits._id} key={Snack_Biscuits._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${Snack ? "" : "invisible"} `} onMouseEnter={(e) => {
-            SetGetid(e.currentTarget.id);
+        return <div id={Snack_Biscuits._id} key={Snack_Biscuits._id}  className={` w-[400px] cursor-pointer ${Snack ? "" : "invisible"} `} onMouseEnter={(e) => {
+             SetGetid(e.currentTarget.id);
+            Fouse();
         }} onMouseLeave={() => {
-            SetGetid(null);
+             SetGetid(null);
+            unFocuse();
         }}>
             <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">
@@ -620,10 +625,12 @@ const AllSpecialProducts = () => {
         </div>
     })
     const Fresh_Veges = data3.map((Fresh_Veges) => {
-        return <div id={Fresh_Veges._id} key={Fresh_Veges._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "invisible"} `} onMouseEnter={(e) => {
-            SetGetid(e.currentTarget.id);
+        return <div id={Fresh_Veges._id} key={Fresh_Veges._id}  className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "invisible"} `} onMouseEnter={(e) => {
+             SetGetid(e.currentTarget.id);
+            Fouse();
         }} onMouseLeave={() => {
-            SetGetid(null);
+             SetGetid(null);
+            unFocuse();
         }}>
             <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">
@@ -682,10 +689,12 @@ const AllSpecialProducts = () => {
         </div>
     })
     const FreshMeat = data2.map((Fresh_Meat) => {
-        return <div id={Fresh_Meat._id} key={Fresh_Meat._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${fresh_meat ? "" : "invisible"} `} onMouseEnter={(e) => {
-            SetGetid(e.currentTarget.id);
+        return <div id={Fresh_Meat._id} key={Fresh_Meat._id}  className={` w-[400px] cursor-pointer ${fresh_meat ? "" : "invisible"} `} onMouseEnter={(e) => {
+             SetGetid(e.currentTarget.id);
+            Fouse();
         }} onMouseLeave={() => {
-            SetGetid(null);
+             SetGetid(null);
+            unFocuse();
         }}>
             <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">
@@ -744,10 +753,12 @@ const AllSpecialProducts = () => {
         </div>
     })
     const AllProducts = data.map((TrendingProducts) => {
-        return <div id={TrendingProducts._id} key={TrendingProducts._id} onMouseOver={Fouse} className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
-            SetGetid(e.currentTarget.id);
+        return <div id={TrendingProducts._id} key={TrendingProducts._id}  className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
+             SetGetid(e.currentTarget.id);
+            Fouse();
         }} onMouseLeave={() => {
-            SetGetid(null);
+             SetGetid(null);
+            unFocuse();
         }}>
             <div className="card mx-2  shadow-custom  rounded-3xl">
                 <div className="flex justify-center ">

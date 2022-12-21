@@ -76,6 +76,7 @@ button#btnhover2{
 .bg-prim{
     @apply bg-[#95AE3C] !important;
 }
+
 .text-sec{
     @apply text-[#2C296D] !important;
 }
