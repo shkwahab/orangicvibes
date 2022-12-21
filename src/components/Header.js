@@ -58,10 +58,10 @@ const Navbar = (props) => {
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
-                                <li className=" hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
-                                <div onMouseEnter={ShopSlider} className="hover:text-[#95AE3C] py-4 cursor-pointer  mx-2">
+                                <li className=" hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
+                                <div onMouseEnter={ShopSlider} className="hover:text-[#95AE3C] py-4 cursor-pointer font-Jost  mx-2">
                                     <div className="flex items-center cursor-pointer">
-                                        <li className=" ">{props.category2}</li>
+                                        <li className="font-Jost ">{props.category2}</li>
                                         <IoIosArrowDown />
                                     </div>
                                 </div>
@@ -133,10 +133,10 @@ const Navbar = (props) => {
                                     </div>
                                     </div>
                                 </div>
-                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
-                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
-                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
-                                <li className="  hover:text-[#95AE3C] cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
                             </ul>
                         </div>
                         <div className="col-lg-3 py-4  flex justify-end ">

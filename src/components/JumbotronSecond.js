@@ -4,7 +4,7 @@ const JumbotronSecond = () => {
   return (
     <>
       <div className=" bg-jumbotron bg-center h-[700px] bg-no-repeat">
-        <div className="mx-20 py-40  ">
+        <div className="mx-20 py-32  ">
           <h6 className='  font-Schoolbell text-lg text-white'>
             ~ Deals Of The Day ~
           </h6>
@@ -47,8 +47,14 @@ const JumbotronSecond = () => {
                 <div className="mt-3 mx-1  font-thin text-gray-200 font-Jost uppercase text-sm">
                   SECOND
                 </div>
-
               </div>
+             
+              <button id="btnhover2" className="    p-[12px] uppercase font-semibold px-3 text-sm bg-white  text-[#95AE3C] transition-all duration-300  rounded-full ">
+                Shop Now
+              </button>
+              <button id="hoverbtn" className="mx-4 text-white border-2 p-[12px] uppercase font-semibold px-3 text-sm rounded-full border-white ">
+               View Menu
+              </button>
             </div>
           </div>
         </div>

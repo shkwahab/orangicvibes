@@ -62,8 +62,11 @@ li.active{
 .kXteup{
     @apply bg-transparent;
 }
+button#hoverbtn{
+    @apply hover:text-[#95AE3C] px-8 hover:bg-white transition-all duration-500 !important;
+}
 
-
-
-
+button#btnhover2{
+    @apply hover:bg-transparent border-2 px-8 border-white hover:text-white !important;
+}
 
