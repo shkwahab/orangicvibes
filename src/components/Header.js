@@ -51,21 +51,21 @@ const Navbar = (props) => {
             <section id="navbar" className='bg-white  sticky top-0 z-50'>
                 <div className=" container">
                     <div className="row    align-self-center items-center">
-                        <div className="col-lg-3  py-4 relative ">
+                        <div className="col-lg-3  py-3 relative ">
                             <h3 className=' font-Jost'>
                                 {props.sitetitle}
                             </h3>
                         </div>
                         <div className="col-lg-6  ">
                             <ul className="nav justify-center">
-                                <li className=" hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category1}</li>
-                                <div onMouseEnter={ShopSlider} className="hover:text-[#95AE3C] py-4 cursor-pointer font-Jost  mx-2">
+                                <li className=" hover:text-[#95AE3C] font-Jost cursor-pointer py-3 nav-item mx-2">{props.category1}</li>
+                                <div onMouseEnter={ShopSlider} className="hover:text-[#95AE3C] py-3 cursor-pointer font-Jost  mx-2">
                                     <div className="flex items-center cursor-pointer">
                                         <li className="font-Jost ">{props.category2}</li>
                                         <IoIosArrowDown />
                                     </div>
                                 </div>
-                                <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-16  ${isShopSlider ? "" : "hidden"} absolute py-4  left-[12rem]  justify-center  `}>
+                                <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-[58px]  ${isShopSlider ? "" : "hidden"} absolute py-3  left-[12rem]  justify-center  `}>
                                     <div className=" border-t-2 border-[#95AE3C]">
                                     <div className="   container-fluid  rounded-b-md
                                       bg-food bg-cover shadow-lg  bg-right px-4 py-8">
@@ -133,13 +133,13 @@ const Navbar = (props) => {
                                     </div>
                                     </div>
                                 </div>
-                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category3}</li>
-                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category4}</li>
-                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category5}</li>
-                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-4 nav-item mx-2">{props.category6}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-3 nav-item mx-2">{props.category3}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-3 nav-item mx-2">{props.category4}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-3 nav-item mx-2">{props.category5}</li>
+                                <li className="  hover:text-[#95AE3C] font-Jost cursor-pointer py-3 nav-item mx-2">{props.category6}</li>
                             </ul>
                         </div>
-                        <div className="col-lg-3 py-4  flex justify-end ">
+                        <div className="col-lg-3 py-3  flex justify-end ">
                             <div className="flex ">
                                 <div className=" mx-2">
                                     <div className=" rounded-full p-2  bg-[#F5F2FF]">

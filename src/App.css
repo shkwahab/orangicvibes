@@ -70,3 +70,15 @@ button#btnhover2{
     @apply hover:bg-transparent border-2 px-8 border-white hover:text-white !important;
 }
 
+.text-prim{
+    @apply text-[#95AE3C] !important;
+}
+.bg-prim{
+    @apply bg-[#95AE3C] !important;
+}
+.text-sec{
+    @apply text-[#2C296D] !important;
+}
+.bg-sec{
+    @apply bg-[#2C296D] !important;
+}
