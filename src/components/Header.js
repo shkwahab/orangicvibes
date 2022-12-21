@@ -184,7 +184,7 @@ const Navbar = (props) => {
                                 <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:bg-[#2C296D] transition-all duration-300 font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
@@ -211,7 +211,7 @@ const Navbar = (props) => {
                                 <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost  my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:bg-[#2C296D] transition-all duration-300 font-Jost  my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
@@ -238,7 +238,7 @@ const Navbar = (props) => {
                                 <p className=" font-Jost">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa aspernatur! Veniam veritatis officia sunt ex, ipsum dolore necessitatibus repudiandae.
                                 </p>
-                                <button className=" bg-[#95AE3C] hover:font-semibold font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
+                                <button className=" bg-[#95AE3C] hover:bg-[#2C296D] transition-all duration-300 font-Jost my-6 text-white py-[12px] text-lg rounded-full px-12  ">
                                     Shop Now
                                 </button>
                             </div>
