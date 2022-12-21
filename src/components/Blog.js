@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React, { useState} from 'react'
 import Carousel from 'react-elastic-carousel';
 
 const Blog = () => {
+ 
     const data = [
         {
             _id: "1",
@@ -76,17 +77,26 @@ const Blog = () => {
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium voluptatem autem voluptatibus voluptatum ducimus deserunt totam quia perferendis consequuntur.",
             feautured_img: "/dummypost.png"
         },
+        {
+            _id: "9",
+            title: "Title9",
+            category: "Organic Vibes",
+            user_role: "admin",
+            date: "August 3,2022",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium voluptatem autem voluptatibus voluptatum ducimus deserunt totam quia perferendis consequuntur.",
+            feautured_img: "/dummypost.png"
+        },
     ]
-    const[onfocus,SetFoucus]=useState(true)
-    const Fouse=()=>{
+    const [onfocus, SetFoucus] = useState(true)
+    const Fouse = () => {
         SetFoucus(false);
     }
-    const unFocuse=()=>{
+    const unFocuse = () => {
         SetFoucus(true);
-      }
-    
+    }
+
     let Blog = data.map((Posts) => {
-        return <section onMouseEnter={Fouse} onMouseLeave={unFocuse}  className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
+        return <section onMouseEnter={Fouse} onMouseLeave={unFocuse} className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
             <div className="card">
                 <div className="">
                     <img src={Posts.feautured_img} className=" card-img-top" alt={Posts.title} />
@@ -105,7 +115,7 @@ const Blog = () => {
                     </div>
                     <div className="my-1 font-QuickSand ">
                         <h3 className='text-sec font-semibold'>
-                        {Posts.title}
+                            {Posts.title}
                         </h3>
                     </div>
                     <div className="font-Jost text-sec text-sm">
@@ -134,7 +144,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className="container my-4">
-                <Carousel className=''showArrows={false}  itemsToShow={3}  itemsToScroll={1} pagination={false} enableAutoPlay={onfocus} autoPlaySpeed={3000}>
+                <Carousel className='' showArrows={false} itemsToShow={3} itemsToScroll={1} pagination={false} enableAutoPlay={onfocus} autoPlaySpeed={3000}>
                     {Blog}
                 </Carousel>
             </div>
