@@ -119,19 +119,19 @@ const Footer = () => {
                                     <div className=" text-semibold text-gray-300 ">
                                         <div>
                                             Monday – Friday:
-                                            <span className="text-white">
+                                            <span className="mx-1 text-white">
                                                 8:10 AM – 6:10 PM
                                             </span>
                                         </div>
                                         <div>
                                             Saturday:
-                                            <span className="text-white">
+                                            <span className="mx-1 text-white">
                                                 10:10 AM – 06:10 PM
                                             </span>
                                         </div>
                                         <div>
                                             Sunday:
-                                            <span className="text-white">
+                                            <span className="mx-1 text-white">
                                                 Close
                                             </span>
                                         </div>
