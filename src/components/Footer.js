@@ -8,7 +8,7 @@ import { BsFacebook, BsInstagram, BsPinterest, BsReddit, BsYoutube } from "react
 const Footer = () => {
     return (
         <>
-            <div className="h-[600px] py-20  bg-footer bg-no-repeat">
+            <div className=" py-20  bg-footer bg-no-repeat">
                 <div className="container">
                     <div id="services" className="flex justify-center">
                         <div className=" font-Jost text-center">
@@ -161,6 +161,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </>
     )
