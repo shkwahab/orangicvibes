@@ -27,7 +27,7 @@ const Home = () => {
       <div className="my-20">
         <JumbotronSecond />
       </div>
-      <div className="my-20">
+      <div className="my-20 ">
         <Blog/>
       </div>
 
