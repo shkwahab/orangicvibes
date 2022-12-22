@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="my-4 bg-opacity-20 bg-gray-400 h-[.2px]" />
+                    <div className="my-10 bg-opacity-20 bg-gray-400 h-[.2px]" />
                     <div className="row">
                         <div className="col-9">
                             <div className="row">
@@ -161,7 +161,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     )
