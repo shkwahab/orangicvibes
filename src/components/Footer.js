@@ -140,9 +140,10 @@ const Footer = () => {
                                 <div className="col-3 border-2 h-[50px] border-red-700"></div>
                             </div>
                         </div>
-                        <div className="col-3 ">
-                            <div className="  h-[50px] border-2 border-red-900" />
-
+                        <div  className="col-3 ">
+                            <div className="  border-l-[.5px] border-opacity-10 border-white h-[200px] absolute 
+                             "></div>
+                            <div className="  " />
                         </div>
                     </div>
                 </div>
