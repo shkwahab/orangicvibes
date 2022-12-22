@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import { AiOutlineStar } from "react-icons/ai"
 import Carousel from 'react-elastic-carousel';
+import {  useInView } from 'react-intersection-observer';
 
 const AllSpecialProducts = () => {
     const data = [
@@ -547,12 +548,23 @@ const AllSpecialProducts = () => {
 
 
     ]
+    const {ref:myref2, InView:track2}=useInView()
+  
+    useEffect(()=>{
+        if(track2===true){
+          SetFoucus(true);
+        }else{
+          SetFoucus(false);
+        }
+    },[track2])
     const [getId, SetGetid] = useState(null);
     const [onfocus, SetFoucus] = useState(true);
     const [allproducts, SetShowAll] = useState(true);
     const [fresh_meat, SetFreshMeat] = useState(false);
     const [fresh_vegetables, SetFreshVegetables] = useState(false);
     const [Snack, SetSnack] = useState(false);
+  
+
     const Fouse = () => {
         SetFoucus(false);
     }
@@ -561,7 +573,7 @@ const AllSpecialProducts = () => {
       }
 
     const Snackers = data4.map((Snack_Biscuits) => {
-        return <div id={Snack_Biscuits._id} key={Snack_Biscuits._id}  className={` w-[400px] cursor-pointer ${Snack ? "" : "invisible"} `} onMouseEnter={(e) => {
+        return <div  id={Snack_Biscuits._id} key={Snack_Biscuits._id}  className={` w-[400px] cursor-pointer ${Snack ? "" : "invisible"} `} onMouseEnter={(e) => {
              SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {
@@ -625,7 +637,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const Fresh_Veges = data3.map((Fresh_Veges) => {
-        return <div id={Fresh_Veges._id} key={Fresh_Veges._id}  className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "invisible"} `} onMouseEnter={(e) => {
+        return <div  id={Fresh_Veges._id} key={Fresh_Veges._id}  className={` w-[400px] cursor-pointer ${fresh_vegetables ? "" : "invisible"} `} onMouseEnter={(e) => {
              SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {
@@ -753,7 +765,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const AllProducts = data.map((TrendingProducts) => {
-        return <div id={TrendingProducts._id} key={TrendingProducts._id}  className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
+        return <div ref={myref2} id={TrendingProducts._id} key={TrendingProducts._id}  className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
              SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {

@@ -1,8 +1,16 @@
-import React, { useState} from 'react'
+import React, { useState,useEffect} from 'react'
 import Carousel from 'react-elastic-carousel';
+import {  useInView } from 'react-intersection-observer';
 
 const Blog = () => {
- 
+    const {ref:myref3, InView:track3}=useInView()
+    useEffect(()=>{
+        if(track3===true){
+          SetFoucus(true);
+        }else{
+          SetFoucus(false);
+        }
+    },[track3])
     const data = [
         {
             _id: "1",
@@ -96,7 +104,7 @@ const Blog = () => {
     }
 
     let Blog = data.map((Posts) => {
-        return <section onMouseEnter={Fouse} onMouseLeave={unFocuse} className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
+        return <section ref={myref3} onMouseEnter={Fouse} onMouseLeave={unFocuse} className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
             <div className="card">
                 <div className="">
                     <img src={Posts.feautured_img} className=" card-img-top" alt={Posts.title} />

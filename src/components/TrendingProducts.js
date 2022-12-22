@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { AiOutlineStar } from "react-icons/ai"
 import Carousel from 'react-elastic-carousel';
+import {  useInView } from 'react-intersection-observer';
 
 
 const TrendingProducts = () => {
@@ -86,18 +87,25 @@ const TrendingProducts = () => {
 
 
     ]
-
+    const {ref:myref, InView:track}=useInView()
+useEffect(()=>{
+    if(track===true){
+      SetFoucus(true);
+    }else{
+      SetFoucus(false);
+    }
+},[track])
     const [getId, SetGetid] = useState(null);
     const[onfocus,SetFoucus]=useState(true)
   const Fouse=()=>{
     SetFoucus(false);
   }
+  
   const unFocuse=()=>{
     SetFoucus(true);
   }
-
     const Trend = data.map((TrendingProducts) => {
-        return <div  id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  "  onMouseEnter={(e) => {
+        return <div ref={myref}  id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  "  onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {
