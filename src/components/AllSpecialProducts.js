@@ -548,7 +548,7 @@ const AllSpecialProducts = () => {
 
 
     ]
-    const {ref:myref2, InView:track2}=useInView()
+    const {ref:myref2, inView:track2}=useInView()
   
     useEffect(()=>{
         if(track2===true){
@@ -765,7 +765,7 @@ const AllSpecialProducts = () => {
         </div>
     })
     const AllProducts = data.map((TrendingProducts) => {
-        return <div ref={myref2} id={TrendingProducts._id} key={TrendingProducts._id}  className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
+        return <div  id={TrendingProducts._id} key={TrendingProducts._id}  className={` w-[400px] cursor-pointer ${allproducts ? "" : "invisible"} `} onMouseEnter={(e) => {
              SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {
@@ -882,7 +882,7 @@ const AllSpecialProducts = () => {
            
             {
                 fresh_meat === false && allproducts === true && fresh_vegetables===false && Snack===false ?
-                <div className=" container-fluid  absolute">
+                <div ref={myref2} className="  container-fluid  absolute">
                     <Carousel className=' px-8' itemsToShow={6} enableAutoPlay={onfocus} itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>
                         {AllProducts}
                     </Carousel>

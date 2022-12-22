@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { AiOutlineStar } from "react-icons/ai"
 import Carousel from 'react-elastic-carousel';
-import {  useInView } from 'react-intersection-observer';
+import {useInView} from 'react-intersection-observer';
 
 
 const TrendingProducts = () => {
@@ -87,13 +87,15 @@ const TrendingProducts = () => {
 
 
     ]
-    const {ref:myref, InView:track}=useInView()
+    const {ref:myref, inView:track}=useInView()
+ 
 useEffect(()=>{
     if(track===true){
       SetFoucus(true);
     }else{
       SetFoucus(false);
     }
+   
 },[track])
     const [getId, SetGetid] = useState(null);
     const[onfocus,SetFoucus]=useState(true)
@@ -105,7 +107,7 @@ useEffect(()=>{
     SetFoucus(true);
   }
     const Trend = data.map((TrendingProducts) => {
-        return <div ref={myref}  id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  "  onMouseEnter={(e) => {
+        return <div  id={TrendingProducts._id} key={TrendingProducts._id} className="w-[400px] cursor-pointer  "  onMouseEnter={(e) => {
             SetGetid(e.currentTarget.id);
             Fouse();
         }} onMouseLeave={() => {
@@ -181,7 +183,7 @@ useEffect(()=>{
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt aspernatur, necessitatibus earum fugiat quas id?
                 </p>
                 
-                <div className=" container-fluid  absolute">
+                <div ref={myref}  className=" container-fluid  absolute">
                    
                  
                 <Carousel  className=' px-8' itemsToShow={6} enableAutoPlay={onfocus}  itemsToScroll={1} pagination={false} showArrows={true} autoPlaySpeed={3000}>

@@ -3,14 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import {  useInView } from 'react-intersection-observer';
 
 const Blog = () => {
-    const {ref:myref3, InView:track3}=useInView()
-    useEffect(()=>{
-        if(track3===true){
-          SetFoucus(true);
-        }else{
-          SetFoucus(false);
-        }
-    },[track3])
+  
     const data = [
         {
             _id: "1",
@@ -102,9 +95,21 @@ const Blog = () => {
     const unFocuse = () => {
         SetFoucus(true);
     }
-
+    const {ref:myref3, inView:track3}=useInView()
+    useEffect(()=>{
+        if(track3===true){
+          SetFoucus(true);
+        }else{
+          SetFoucus(false);
+        }
+    },[track3])
+    console.log(track3);
     let Blog = data.map((Posts) => {
-        return <section ref={myref3} onMouseEnter={Fouse} onMouseLeave={unFocuse} className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
+        return <section  onMouseEnter={Fouse} onMouseLeave={()=>{
+            if(track3===true){
+                unFocuse();
+            }
+        }} className='mx-3 cursor-pointer w-[400px] border-[.5px] border-black border-opacity-30 rounded-md shadow-md' key={Posts._id} id={Posts._id}>
             <div className="card">
                 <div className="">
                     <img src={Posts.feautured_img} className=" card-img-top" alt={Posts.title} />
@@ -151,8 +156,8 @@ const Blog = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, totam sequi maiores vero.
                 </div>
             </div>
-            <div className="container my-4">
-                <Carousel className='' showArrows={false} itemsToShow={3} itemsToScroll={1} pagination={false} enableAutoPlay={onfocus} autoPlaySpeed={3000}>
+            <div ref={myref3} className="container my-4">
+                <Carousel  className='' showArrows={true} itemsToShow={3} itemsToScroll={1} pagination={false} enableAutoPlay={onfocus} autoPlaySpeed={3000}>
                     {Blog}
                 </Carousel>
             </div>
