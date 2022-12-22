@@ -3,9 +3,14 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import ScrollToTop from "react-scroll-to-top";
+import {BsArrowUp} from "react-icons/bs"
 function App() {
   return (
     <>
+          <ScrollToTop className='p-1 shadow-none bg-prim ' component={<>
+          <BsArrowUp className='text-white font-semibold text-3xl'/>
+          </>} smooth={true} top={20} />
      <Header 
       sitetitle="Organic Vibes"
       category1="Home"
@@ -24,7 +29,6 @@ function App() {
       Shop1ListItem4="Shop Left Sidebar"
       Shop1ListItem5="Shop Right Sidebar"
       Shop1ListItem6="Shop List View"
-  
       />
     <BrowserRouter>
     <Routes>
