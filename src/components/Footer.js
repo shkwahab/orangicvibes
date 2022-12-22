@@ -8,7 +8,7 @@ import { BsFacebook, BsInstagram, BsPinterest, BsReddit, BsYoutube } from "react
 const Footer = () => {
     return (
         <>
-            <div className="  bg-footer bg-no-repeat">
+            <div className="pb-8  bg-footer bg-no-repeat">
                 <div className="py-10 container">
                     <div id="services" className="flex justify-center">
                         <div className=" font-Jost text-center">
@@ -75,7 +75,7 @@ const Footer = () => {
 
                     <div className="my-10 bg-opacity-20 bg-gray-400 h-[.2px]" />
                     <div className="row">
-                        <div className="col-9">
+                        <div className="col-8">
                             <div className="row">
                                 <div className="col-4 font-Jost ">
                                     <div className="text-sm mb-8  uppercase font-semibold text-white">
@@ -140,7 +140,7 @@ const Footer = () => {
                                 <div className="col-3 ">
                                     <div className=" font-Jost ">
                                         <div className=" text-white font-semibold">
-                                        HOT CATEGORIES
+                                            HOT CATEGORIES
                                         </div>
                                         <ul id="start" className=' text-gray-300 '>
                                             <li className=' my-1'>Fruits & Vegetables</li>
@@ -148,19 +148,60 @@ const Footer = () => {
                                             <li className=' my-1'>Package Foods</li>
                                             <li className=' my-1'>Beverage</li>
                                             <li className=' my-1'>Health & Wellness</li>
-                                            
+
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div  className="col-3 ">
-                            <div className="  border-l-[.5px] border-opacity-10 border-white h-[200px] absolute 
-                             "></div>
-                            <div className="  " />
+                        <div className="col-4 ">
+                            <div className="  border-l-[.5px] border-opacity-10 border-white h-[250px] absolute 
+                             "/>
+                            <div className=" ml-8 font-Jost text-white font-semibold">
+                                OUR NEWSLETTER
+                            </div>
+                            <div className="ml-8 mt-8  text-gray-300 font-Jost ">
+                                Subscribe to the Orfarm mailing list to receive updates
+                                on new arrivals & other information.
+                            </div>
+                            <div>
+                                <div className=" flex my-4 ml-8 bg-white w-[300px]">
+                                    <input type="email" name="newsletter" id="newsletter" placeholder='Enter Your Email' className='h-[50px] w-[140px] border-none outline-none  p-2' />
+                                    <input type="submit" value="Subscribe" className='  bg-prim px-[16px] py-[13px] text-white absolute  right-24  w-[140px] uppercase font-semibold font-Jost' />
+                                </div>
+                                <div className="ml-8 text-white font-Jost flex">
+                                    <input type="checkbox" name="policy" id="checkpolicy" className='  accent-[#95AE3C] ' />
+                                    <div className="ml-2">
+                                        I accept terms & conditions & privacy policy.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+            <div className="my-10  bg-opacity-20 bg-gray-400 h-[.2px]" />
+                    <div className="container ">
+                        <div className="flex justify-between font-Jost text-gray-300 ">
+                            <div>
+                            &copy; CopyRight 
+                                &nbsp;
+                            <span className="text-prim">
+                                {`Organic Vibes all rights reserved.`}
+                                &nbsp;
+                            </span>
+                             Made by
+                             <span className=" text-prim">
+                                &nbsp;
+                             {`Sheikh Abdul Wahab Ali.`}
+                                </span> 
+                            </div>
+                            <div className="cursor-pointer">
+                                <img src="/footer-payment.png" alt="payments" />
+                            </div>
+                        </div>
+
+                    </div>
             </div>
         </>
     )
