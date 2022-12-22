@@ -3,12 +3,12 @@ import { MdOutlinePayment, MdDeliveryDining } from "react-icons/md"
 import { RiMessage2Line } from "react-icons/ri"
 import { FaRegListAlt } from "react-icons/fa"
 import { TbDiscount2 } from "react-icons/tb"
-import {BsFacebook,BsInstagram,BsPinterest,BsReddit,BsYoutube} from "react-icons/bs"
+import { BsFacebook, BsInstagram, BsPinterest, BsReddit, BsYoutube } from "react-icons/bs"
 
 const Footer = () => {
     return (
         <>
-            <div className="h-[600px] py-40  bg-footer bg-no-repeat">
+            <div className="h-[600px] py-20  bg-footer bg-no-repeat">
                 <div className="container">
                     <div id="services" className="flex justify-center">
                         <div className=" font-Jost text-center">
@@ -88,29 +88,56 @@ const Footer = () => {
                                             support@example.com
                                         </span>
                                     </div>
-                                    <div className=" text-sm text-gray-300 font-semibold mt-8">
-                                    Social Media:
+                                    <div className=" text-sm text-gray-300 font-semibold mt-8 mb-1">
+                                        Social Media:
                                     </div>
                                     <div className=" flex">
                                         <div className="m-1">
-                                            <BsFacebook className=' text-white text-xl'/>
+                                            <BsFacebook className=' text-white text-xl' />
                                         </div>
                                         <div className="m-1">
-                                            <BsInstagram className=' text-white text-xl'/>
+                                            <BsInstagram className=' text-white text-xl' />
                                         </div>
                                         <div className="m-1">
-                                            <BsPinterest className=' text-white text-xl'/>
+                                            <BsPinterest className=' text-white text-xl' />
                                         </div>
                                         <div className="m-1">
-                                            <BsReddit className=' text-white text-xl'/>
+                                            <BsReddit className=' text-white text-xl' />
                                         </div>
                                         <div className="m-1">
-                                            <BsYoutube className=' text-white text-xl'/>
+                                            <BsYoutube className=' text-white text-xl' />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-4 border-2 h-[50px] border-red-600"></div>
-                                <div className="col-4 border-2 h-[50px] border-red-700"></div>
+                                <div className="col-5 font-Jost ">
+                                    <div className="text-sm mb-8  uppercase font-semibold text-white">
+                                        LOOKING FOR ORAGANIC VIBES?
+                                    </div>
+                                    <div className=" text-gray-300 mb-8">
+                                        Dummy Place, Dummy City, Dummy Street, Pakistan.
+                                    </div>
+                                    <div className=" text-semibold text-gray-300 ">
+                                        <div>
+                                            Monday – Friday:
+                                            <span className="text-white">
+                                                8:10 AM – 6:10 PM
+                                            </span>
+                                        </div>
+                                        <div>
+                                            Saturday:
+                                            <span className="text-white">
+                                                10:10 AM – 06:10 PM
+                                            </span>
+                                        </div>
+                                        <div>
+                                            Sunday:
+                                            <span className="text-white">
+                                                Close
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-3 border-2 h-[50px] border-red-700"></div>
                             </div>
                         </div>
                         <div className="col-3 ">
