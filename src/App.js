@@ -23,6 +23,7 @@ function App() {
       Shop1ListItem3="Shop Version"
       Shop1ListItem4="Shop Left Sidebar"
       Shop1ListItem5="Shop Right Sidebar"
+      Shop1ListItem6="Shop List View"
   
       />
     <BrowserRouter>

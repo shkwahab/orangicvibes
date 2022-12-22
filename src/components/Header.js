@@ -68,7 +68,7 @@ const Navbar = (props) => {
                                 <div onMouseEnter={ShopSlide} onMouseLeave={ShopSlidelift} className={`top-[58px]  ${isShopSlider ? "" : "hidden"} absolute py-3  left-[12rem]  justify-center  `}>
                                     <div className=" border-t-2 border-[#95AE3C]">
                                     <div className="   container-fluid  rounded-b-md
-                                      bg-food bg-cover shadow-lg  bg-right px-4 py-8">
+                                      bg-food bg-no-repeat bg-cover    shadow-lg   px-4 py-8">
                                         <div className="row text-black  w-[800px]">
                                             <div className="col-3">
                                                 <div className=" font-Jost">
@@ -102,15 +102,11 @@ const Navbar = (props) => {
                                                             </li>
                                                             </div>
                                                         <div className="col">
-                                                            <li className=" invisible">
-                                                            space
+                                                            <li className="hover:animate-slideleft hover:translate-x-5 font-Jost  cursor-pointer">
+                                                             {props.Shop1ListItem6}
                                                             </li>
                                                             </div>
-                                                        <div className="col">
-                                                            <li className="  hover:animate-slideleft hover:translate-x-5 translate  hover:animate-slidelef cursor-pointer">
-                                                            {props.Shop1ListItem7}
-                                                            </li>
-                                                            </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>

@@ -29,7 +29,7 @@ h6{
     @apply  md:text-base text-sm text-[#2C296D] ;
 }
 .shopitems li:nth-child(n){
-@apply my-1  text-[#424e16]  font-semibold ;
+@apply my-1  text-[#95AE3C]  font-semibold ;
 }
 .card{
     @apply border-none !important;
