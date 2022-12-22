@@ -137,7 +137,21 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3 border-2 h-[50px] border-red-700"></div>
+                                <div className="col-3 ">
+                                    <div className=" font-Jost ">
+                                        <div className=" text-white font-semibold">
+                                        HOT CATEGORIES
+                                        </div>
+                                        <ul id="start" className=' text-gray-300 '>
+                                            <li className=' my-1'>Fruits & Vegetables</li>
+                                            <li className=' my-1'>Dairy Products</li>
+                                            <li className=' my-1'>Package Foods</li>
+                                            <li className=' my-1'>Beverage</li>
+                                            <li className=' my-1'>Health & Wellness</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div  className="col-3 ">

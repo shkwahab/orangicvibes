@@ -2,6 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 div#shopslider:hover  div#shopy{
     @apply block;
 }
@@ -9,7 +11,7 @@ div#shopy:hover{
     @apply block;
 }
 h1{
-    @apply lg:text-4xl md:text-3xl text-2xl font-[Calibri] text-[#2C296D] ;
+    @apply lg:text-4xl md:text-3xl text-2xl  text-[#2C296D] ;
 }
 h2{
     @apply lg:text-3xl md:text-2xl text-xl text-[#95AE3C] ;
@@ -82,4 +84,8 @@ button#btnhover2{
 }
 .bg-sec{
     @apply bg-[#2C296D] !important;
+}
+
+ul#start{
+    @apply my-8 p-0  !important;
 }
